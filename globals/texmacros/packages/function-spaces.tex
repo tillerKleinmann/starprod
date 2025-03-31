@@ -1,0 +1,171 @@
+% Allgemeine Schriftart für Funktionenräume
+%\newcommand{ \fsfont}[1]{\mathscr{#1}}
+
+
+
+% Symbole für Funktionentypen (nach Glattheit)
+\newcommand{ \fsDis }{ \fsfont{ D }' }% Distributionen
+\newcommand{ \fsDisext }{ \overline{ \fsfont{ D } }{}' }% Distributionen
+\newcommand{ \fsSmo }{ \fsfont{ E } }% Glatte Funktionen
+\newcommand{ \fsCnt }{ \fsfont{ C } }% Stetige Funktionen
+\newcommand{ \fsCntp }{ \fsCnt_+ }% nichtnegative Stetige Funktionen
+\newcommand{ \fsMsr }{ \fsfont{ K }' }% (Radon) Maße
+%\newcommand{ \fsMsr }{ \fsfont{ M } }% (Radon) Maße
+\newcommand{ \fsMsrp }{ \fsMsr_+ }% positive (Radon) Maße
+
+\newcommand{ \fsMsrint }{ \fsfont{M}^1 }
+
+\newcommand{ \fsFunp }{ \fsfont{ F }\hspace{-2pt}{ }_+ }% nichtnegative Funktionen
+\newcommand{ \fsFunep }{ \overline{\fsfont{ F }}\hspace{-2pt}{ }_+ }% nichtnegative Funktionen
+
+\newcommand{ \dom }{ \operatorname{dom} }
+
+
+%%%%%%%%%%%%%%%%%%
+% Lebesgue-Räume %
+%%%%%%%%%%%%%%%%%%
+\newcommand{ \fsLeb }[ 1 ]{ L^{ #1 } }
+\newcommand{ \fsLebstr }[ 1 ]{ \left( L^{ #1 } \right)_{ \mathrm{ str } } }
+%\newcommand{ \fsLebloc }[ 1 ]{ \fsLeb{ #1 }_{ \mathrm{loc} } }
+\newcommand{ \fsLebloc }[ 1 ]{ \fsLeb{ #1 }_{ \mathrm{lok} } }
+\newcommand{ \fsLebwtd }[ 2 ]{ \fsLeb{ #1 }_{ #2 } }
+\newcommand{ \fsLebcpt }[ 1 ]{ \fsLeb{ #1 }_\idCptSupp }
+\newcommand{ \fsLebvan }{ \dot{L}^\infi }
+
+\newcommand{ \fsLebp }[ 1 ]{ L^{ #1, + } }
+%\newcommand{ \fsLebploc }[ 1 ]{ \fsLeb{ #1 }_{ \mathrm{loc}, + } }
+\newcommand{ \fsLebploc }[ 1 ]{ \fsLeb{ #1 }_{ \mathrm{lok}, + } }
+\newcommand{ \fsLebpwtd }[ 2 ]{ \fsLebp{ #1 }_{ #2 } }
+\newcommand{ \fsLebpcpt }[ 1 ]{ \fsLeb{ #1 }_{ \idCptSupp, + } }
+    
+\newcommand{ \fsLeblb }{ \fsLebloc{ \infi } }
+\newcommand{ \fsLebplb }{ \fsLebploc{ \infi } }
+\newcommand{ \fsLebli }{ \fsLebloc{ 1 }     }
+\newcommand{ \fsLebpli }{ \fsLebploc{ 1 }     }
+\newcommand{ \fsLebcb }{ \fsLebcpt{ \infi } }
+\newcommand{ \fsLebpcb }{ \fsLebpcpt{ \infi } }
+\newcommand{ \fsLebci }{ \fsLebcpt{ 1 } }
+\newcommand{ \fsLebpci }{ \fsLebpcpt{ 1 } }
+
+
+
+
+%%%%%%%%%%%%
+% Maßräume %
+%%%%%%%%%%%%
+\newcommand{ \fsMsrcpt }{ \fsCnt' }
+\newcommand{ \fsMsrpcpt }{ \fsMsrcpt_+ }
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% Distributionenräume %
+%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{ \fsDisF }{ \fsDis{}^{\rmF} }
+\newcommand{ \fsDiscpt }{ \fsfont{ E }' }
+\newcommand{ \fsDisbnd }{ \fsfont{ B }' }
+\newcommand{ \fsDisvan }{ \dot{ \fsfont{ B } }' }
+\newcommand{ \fsDistmp }{ \fsfont{ S }' }
+\newcommand{ \fsConv }{ \fsfont{ O }'_{\rmC} }
+\newcommand{ \fsConvb }{ \fsfont{ O }'_{\rmC,\rmb} }
+\newcommand{ \fsConvs }{ \fsfont{ O }'_{\rmC,\rms} }
+\newcommand{ \fsConvd }{ \fsfont{ O }_{\rmC} }
+\newcommand{ \fsMult }{ \fsfont{ O }_{\rmM} }
+\newcommand{ \fsMultd }{ \fsfont{ O }'_{\rmM} }
+\newcommand{ \fsCConv }{ \fsfont{ O }'\hspace{ -2pt }{}_{ C^* } }
+\newcommand{ \fsConvT }[1]{ \fsConv( \fsTest, #1 ) }
+\newcommand{ \fsConvTb }[1]{ \fsConvb( \fsTest, #1 ) }
+\newcommand{ \fsConvTs }[1]{ \fsConvs( \fsTest, #1 ) }
+\newcommand{ \fsDismult }{ \fsfont{ O }'_M }
+\newcommand{ \fsDiscau }{ \fsDis_+ }
+\newcommand{ \fsDiscauz }{ \fsDis_{0+} }
+\newcommand{ \fsDisaca }{ \fsDis_- }
+\newcommand{ \fsDisctmp }{ \fsfont{ S }'_+ }
+\newcommand{ \fsDisatmp }{ \fsfont{ S }'_- }
+\newcommand{ \fsDisleb }[ 1 ]{ \fsDis\hspace{-2pt}{}_{ L^{ #1 } } }
+\newcommand{ \fsDisint }{ \fsDisleb{1} }
+\newcommand{ \fsDislebstr }[ 1 ]{ \fsDis\hspace{-2pt}{}_{ L^{ #1 }, \mathrm{ c } } }
+\newcommand{ \fsDislebw }[ 2 ]{ \fsDis\hspace{-1pt}{}_{ L^{ #1 },{ #2 } } }
+\newcommand{ \fsDisintw }[ 1 ]{ \fsDis\hspace{-1pt}{}_{ L^{ 1 },{ #1 } } }
+\newcommand{ \fsDisidx }[ 1 ]{ \fsDis\hspace{ -2pt }{}_{ #1 } }
+
+
+\newcommand{ \fsoDisrep }[ 1 ]{ \fsDis\left[ #1 \right] }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Räume glatter Funktionen %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{ \fsSmocpt }{ \fsfont{ D } }
+\newcommand{ \fsTest }{ \fsSmocpt }
+\newcommand{ \fsTestF }{ \fsTest^{\rmF} }
+\newcommand{ \fsTestone }{ \fsTest^1 }
+\newcommand{ \fsSmobnd }{ \fsfont{ B } }
+\newcommand{ \fsSmobndstr }{ \fsfont{ B }_{ \mathrm{ c } } }
+\newcommand{ \fsSmovan }{ \dot{ \fsfont{ B } } }
+\newcommand{ \fsSmoleb }[ 1 ]{ \fsTest_{ L^{ #1 } } }
+\newcommand{ \fsSmolebw }[ 2 ]{ \fsTest_{ L^{ #1 },{ #2 } } }
+\newcommand{ \fsSmolebstr }[ 1 ]{ \fsTest_{ L^{ #1 }, \mathrm{ c } } }
+\newcommand{ \fsSmoint }{ \fsSmoleb{1} }
+\newcommand{ \fsSmocau }{ \fsSmo_+ }
+\newcommand{ \fsSmoaca }{ \fsSmo_- }
+\newcommand{ \fsSmocauz }{ \fsSmo_{0+} }
+\newcommand{ \fsSchwartz }{ \fsfont{ S } }
+
+
+\newcommand{ \fsDisdiagint }[ 1 ]{ ( \fsSmovan_{ #1 \Delta } )' }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Räume stetiger Funktionen %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{ \fsCntcpt }{ \fsfont{ K } }
+\newcommand{ \fsCTest }{ \fsCntcpt }
+\newcommand{ \fsCntvan }{ \fsCnt_{0} }
+\newcommand{ \fsCntpvan }{ \fsCnt_{0,+} }
+\newcommand{ \fsCntbnd }{ \fsCnt_{ \mathrm{ b } } }
+\newcommand{ \fsCntbndstr }{ \fsCnt_{ \mathrm{b,s} } }
+
+\newcommand{ \fsCntPW }{ \fsCnt_{\text{pw}} }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Räume nichtnegativer stetiger Funktionen %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{ \fsCntpcpt }{ \fsfont{ K }_+ }
+\newcommand{ \fsCpTest }{ \fsCntpcpt }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Mengensystem von Funktionenräumen %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{ \ssTestBnd }{ \sssfont{ D } }
+\newcommand{ \ssDiscptBnd }{ \ssTestBnd' }
+
+
+\newcommand{ \ssSmoCpt }{ \sssfont{ D } }
+\newcommand{ \ssDisCpt }{ \sssfont{ E }' }
+
+
+
+\newcommand{ \refl }[ 1 ]{ \check{ #1 } }
+
+\newcommand{ \supp }{ \operatorname{supp} }
+\newcommand{ \Supp }{ \operatorname{Supp} }
+
+\newcommand{ \nullset }{ \operatorname{null} }
+
+
+\newcommand{ \supnorm }[ 1 ]{ \lVert #1 \rVert_\infi }
+\newcommand{ \intnorm }[ 1 ]{ \lVert #1 \rVert_1 }
+
+
+\newcommand{ \idcs }{ { \mathtt{cs} } }
+\newcommand{ \idlb }{ { \mathtt{lb} } }
+\newcommand{ \idub }{ { \mathtt{ub} } }
+\newcommand{ \idvi }{ { \mathtt{vi} } }
+
+
+\newcommand{ \jbrac }[ 1 ]{ \langle #1 \rangle }
+\newcommand{ \jbracv }{ \jbrac{\cdot} }

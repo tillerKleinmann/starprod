@@ -1,0 +1,68 @@
+\newcommand{ \fsSeq }{ \omega }
+
+\newcommand{ \fsSeqwi }{ s' }
+\newcommand{ \fsSeqrd }{ s }
+
+\newcommand{ \fsSum }[ 1 ]{ \ell^{#1} }
+\newcommand{ \fsSump }[ 1 ]{ \ell^{#1}_+ }
+
+\newcommand{ \fsSeqbnd }{ \fsSum{\infi} }
+\newcommand{ \fsSeqpbnd }{ \fsSump{\infi} }
+
+\newcommand{ \fsSeqbndls }{ \fsSum{\infi}_{\rml\rms} }
+
+\newcommand{ \fsSeqbndstr }{ \ell^\infi_{\rms} }
+\newcommand{ \fsSeqpbndstr }{ \ell^\infi_{\rms,+} }
+
+\newcommand{ \fsSeqvan }{ c_0 }
+\newcommand{ \fsSeqpvan }{ c_{0,+} }
+
+\newcommand{ \fsSumw }[ 2 ]{ \ell^{#1}_{#2} }
+
+\newcommand{ \fsSeqcpt }{ \phi }
+
+\newcommand{ \fsSeqprd }{ s_+ }
+\newcommand{ \fsSeqp }{ \fsSeq_+ }
+\newcommand{ \fsSeqep }{ \overline{\fsSeq}_+ }
+\newcommand{ \fsSeqpcpt }{ \fsSeqcpt_+ }
+
+\newcommand{ \fsoSSP }[ 2 ]{ { #2 }\{ #1 \} }
+\newcommand{ \fsSSI }[ 2 ]{ { #2 }\langle #1 \rangle }
+
+\newcommand{ \fsSeqvp }[ 1 ]{ \fsoSSP{ #1 }{ \fsSeq } }
+\newcommand{ \fsSeqvpcpt }[ 1 ]{ \fsoSSP{ #1 }{ \fsSeqcpt } }
+
+\newcommand{ \fsSeqvi }[ 1 ]{ \fsSSI{ #1 }{ \fsSeq } }
+\newcommand{ \fsSeqvicpt }[ 1 ]{ \fsSSI{ #1 }{ \fsSeqcpt } }
+
+\newcommand{ \fsoSSPlc }[ 1 ]{ \fsoSSP{ #1 }{ \fsSeq } }
+\newcommand{ \fsoSSPcs }[ 1 ]{ \fsoSSP{ #1 }{ \fsSeqcpt } }
+
+\newcommand{ \fsSSIlc }[ 1 ]{ \fsSSI{ #1 }{ \fsSeq } }
+\newcommand{ \fsSSIcs }[ 1 ]{ \fsSSI{ #1 }{ \fsSeqcpt } }
+
+\newcommand{ \fsSeqas }[ 2 ]{ #1 \{ #2 \} }
+
+% \newcommand{ \fssSeqv }[ 2 ]{ #1[ #2 ] }
+% \newcommand{ \FssSeqv }[ 2 ]{ #1\left[ #2 \right] }
+%\newcommand{ \fssSeqv }[ 2 ]{ #1 \rtimes #2 }
+%\newcommand{ \FssSeqv }[ 2 ]{ #1 \rtimes #2 }
+% \newcommand{ \fssSeqv }[ 2 ]{ #1 \mathbin{{\mult}|} #2 }
+% \newcommand{ \FssSeqv }[ 2 ]{ #1 \mathbin{{\mult}|} #2 }
+
+\newcommand{ \fsbSS }[ 2 ]{ #1 [ #2 ] }
+\newcommand{ \FsbSS }[ 2 ]{ #1 \left[ #2 \right] }
+%\newcommand{ \fsbSS }[ 2 ]{ #1 \rtimes #2 }
+%\newcommand{ \FsbSS }[ 2 ]{ #1 \rtimes #2 }
+% \newcommand{ \fsbSS }[ 2 ]{ #1 \mathbin{{\mult}|} #2 }
+% \newcommand{ \FsbSS }[ 2 ]{ #1 \mathbin{{\mult}|} #2 }
+
+% \newcommand{ \fsbSScap }[ 2 ]{ #1 [ \cap {:} #2 ] }
+% \newcommand{ \FsbSScap }[ 2 ]{ #1 \left[\left[ \bigcap {:} #2 \right]\right] }
+\newcommand{ \fsbSScap }[ 2 ]{ #1 [ #2, {\cap} ] }
+\newcommand{ \FsbSScap }[ 2 ]{ #1 \left[\left[ #2, {\cap} \right]\right] }
+
+% \newcommand{ \fsbSScup }[ 2 ]{ #1 [ \cup {:} #2 ] }
+% \newcommand{ \FsbSScup }[ 2 ]{ #1 \left[\left[ \bigcup {:} #2 \right]\right] }
+\newcommand{ \fsbSScup }[ 2 ]{ #1 [ #2, {\cup} ] }
+\newcommand{ \FsbSScup }[ 2 ]{ #1 \left[\left[ #2, {\cup} \right]\right] }

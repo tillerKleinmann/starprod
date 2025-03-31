@@ -1,0 +1,102 @@
+% \newcommand{ \fsoC }[ 3 ] { \left( #1 \right)^{ \conv #3 }_{ #2 } }
+\newcommand{ \fsoC }[ 3 ]{ ( #1 )^{ \conv #3 }_{ #2 } }
+%\newcommand{ \fsoC }[ 3 ]{ ( #1 )^{ #3( \conv ) }_{ #2 } }
+
+
+\newcommand{ \idAlgebra }{ \rma }
+\newcommand{ \idPerfectAlgebra }{ \rmA }
+\newcommand{ \idModule }{ \rmM }
+%\newcommand{ \idSolidAlgebra }{ \abs{\idAlgebra} }
+\newcommand{ \idSolidAlgebra }{ \idSolid\idAlgebra }
+\newcommand{ \idSemigroup }{ \rms }
+\newcommand{ \idMonoid }{ \rmo\rmo }
+
+\newcommand{ \fsoCD }[ 2 ]{ ( #1 )^{ \conv }_{ #2 } }
+\newcommand{ \fsoCP }[ 2 ]{ ( #1 )^{ \conv\conv }_{ #2 } }
+\newcommand{ \fsoCa }[ 2 ]{ ( #1 )^{ \conv \idAlgebra }_{ #2 } }
+\newcommand{ \fsoCsa }[ 2 ]{ ( #1 )^{ \conv \idSolidAlgebra }_{ #2 } }
+\newcommand{ \fsoCal }[ 2 ]{ ( #1 )^{ \conv \idAlgebra }_{ #2 } }
+\newcommand{ \fsoCsg }[ 2 ]{ ( #1 )^{ \conv \idSemigroup }_{ #2 } }
+\newcommand{ \fsoCmo }[ 2 ]{ ( #1 )^{ \conv \idMonoid }_{ #2 } }
+\newcommand{ \fsoA }[ 2 ]{ \C[ #1 ] }
+\newcommand{ \fsoAK }[ 2 ]{ ( #1 )^{ /_\conv\idAlgebra_{ #2 } } }
+\newcommand{ \fsoSA }[ 2 ]{ ( #1 )^{ \conv \idSolidAlgebra }_{ #2 } }
+\newcommand{ \fsoCA }[ 2 ]{ \fsoC{ #1 }{ #2 }{ \idPerfectAlgebra } }
+\newcommand{ \fsoCM }[ 2 ]{ \fsoC{ #1 }{ #2 }{ \idModule } }
+% \newcommand{ \fsoCD }[ 2 ]{ ( #1 )^{ \conv }_{ #2 } }
+% \newcommand{ \fsoCP }[ 2 ]{ ( #1 )^{ \conv\conv }_{ #2 } }
+% \newcommand{ \fsoCa }[ 2 ]{ ( #1 )^{ \idAlgebra( \conv ) }_{ #2 } }
+% \newcommand{ \fsoCsa }[ 2 ]{ ( #1 )^{ \idSolidAlgebra( \conv ) }_{ #2 } }
+% \newcommand{ \fsoCal }[ 2 ]{ ( #1 )^{ \idAlgebra( \conv ) }_{ #2 } }
+% \newcommand{ \fsoCsg }[ 2 ]{ ( #1 )^{ \idSemigroup( \conv ) }_{ #2 } }
+% \newcommand{ \fsoCmo }[ 2 ]{ ( #1 )^{ \idMonoid( \conv ) }_{ #2 } }
+% \newcommand{ \fsoA }[ 2 ]{ \C[ #1 ] }
+% \newcommand{ \fsoAK }[ 2 ]{ ( #1 )^{ /_\conv \idAlgebra_{ #2 } } }
+% \newcommand{ \fsoSA }[ 2 ]{ ( #1 )^{ \idSolidAlgebra( \conv ) }_{ #2 } }
+% \newcommand{ \fsoCA }[ 2 ]{ \fsoC{ #1 }{ #2 }{ \idPerfectAlgebra } }
+% \newcommand{ \fsoCM }[ 2 ]{ \fsoC{ #1 }{ #2 }{ \idModule } }
+
+
+
+\newcommand{ \ssNTop }[ 1 ]{ \sssT^*( #1 ) }
+\newcommand{ \ssNBor }[ 1 ]{ \sssB^*( #1 ) }
+
+
+\newcommand{ \fsoCDDis }[ 1 ]{ \fsoCD{ #1 }{ \fsDis } }
+\newcommand{ \fsoCPDis }[ 1 ]{ \fsoCP{ #1 }{ \fsDis } }
+\newcommand{ \fsoCaDis }[ 1 ]{ \fsoCa{ #1 }{ \fsDis } }
+\newcommand{ \fsoCsaDis }[ 1 ]{ \fsoCsa{ #1 }{ \fsDis } }
+\newcommand{ \fsoCsgDis }[ 1 ]{ \fsoCsg{ #1 }{ \fsDis } }
+\newcommand{ \fsoCmoDis }[ 1 ]{ \fsoCmo{ #1 }{ \fsDis } }
+\newcommand{ \fsoCalDis }[ 1 ]{ \fsoCal{ #1 }{ \fsDis } }
+\newcommand{ \fsoADis }[ 1 ]{ \fsoA{ #1 }{ \fsDis } }
+\newcommand{ \fsoSADis }[ 1 ]{ \fsoSA{ #1 }{ \fsDis } }
+\newcommand{ \fsoCADis }[ 1 ]{ \fsoCA{ #1 }{ \fsDis } }
+\newcommand{ \fsoCMDis }[ 1 ]{ \fsoCM{ #1 }{ \fsDis } }
+
+
+\newcommand{ \fsoCDSeq }[ 1 ]{ \fsoCD{ #1 }{ \fsSeq } }
+\newcommand{ \fsoCPSeq }[ 1 ]{ \fsoCP{ #1 }{ \fsSeq } }
+\newcommand{ \fsoCaSeq }[ 1 ]{ \fsoCa{ #1 }{ \fsSeq } }
+\newcommand{ \fsoCsaSeq }[ 1 ]{ \fsoCsa{ #1 }{ \fsSeq } }
+\newcommand{ \fsoCsgSeq }[ 1 ]{ \fsoCsg{ #1 }{ \fsSeq } }
+\newcommand{ \fsoCmoSeq }[ 1 ]{ \fsoCmo{ #1 }{ \fsSeq } }
+\newcommand{ \fsoCalSeq }[ 1 ]{ \fsoCal{ #1 }{ \fsSeq } }
+\newcommand{ \fsoASeq }[ 1 ]{ \fsoA{ #1 }{ \fsSeq } }
+\newcommand{ \fsoSASeq }[ 1 ]{ \fsoSA{ #1 }{ \fsSeq } }
+\newcommand{ \fsoCASeq }[ 1 ]{ \fsoCA{ #1 }{ \fsSeq } }
+\newcommand{ \fsoCMSeq }[ 1 ]{ \fsoCM{ #1 }{ \fsSeq } }
+
+
+\newcommand{ \fsoCDLsc }[ 1 ]{ \fsoCD{ #1 }{ \mathrm{ T } }}
+\newcommand{ \fsoCPLsc }[ 1 ]{ \fsoCP{ #1 }{ \mathrm{ T } }}
+\newcommand{ \fsoCaLsc }[ 1 ]{ \fsoCa{ #1 }{ \mathrm{ T } }}
+\newcommand{ \fsoALsc }[ 1 ]{ \fsoA{ #1 }{ \mathrm{ T } }}
+\newcommand{ \fsoAKLsc }[ 1 ]{ \fsoAK{ #1 }{ \mathrm{ T } }}
+\newcommand{ \fsoCALsc }[ 1 ]{ \fsoCA{ #1 }{ \mathrm{ T } }}
+\newcommand{ \fsoCMLsc }[ 1 ]{ \fsoCM{ #1 }{ \mathrm{ T } }}
+
+\newcommand{ \fsoCDLscp }[ 1 ]{ \fsoCD{ #1 }{ + }}
+\newcommand{ \fsoCPLscp }[ 1 ]{ \fsoCP{ #1 }{ + }}
+\newcommand{ \fsoCaLscp }[ 1 ]{ \fsoCa{ #1 }{ + }}
+\newcommand{ \fsoALscp  }[ 1 ]{ \fsoA{ #1  }{ + }}
+\newcommand{ \fsoAKLscp }[ 1 ]{ \fsoAK{ #1 }{ + }}
+\newcommand{ \fsoCALscp }[ 1 ]{ \fsoCA{ #1 }{ + }}
+\newcommand{ \fsoCMLscp }[ 1 ]{ \fsoCM{ #1 }{ + }}
+
+
+%% \newcommand{ \fsoCD }[ 2 ]{ \left( #1 \right)^{ \conv }_{ #2 } }
+%% \newcommand{ \fsoCP }[ 2 ]{ \left( #1 \right)^{ \conv\conv }_{ #2 } }
+
+%% \newcommand{ \fsoCDDis }[ 1 ]{ \fsoCD{ #1 }{ \fsDis } }
+%% \newcommand{ \fsoCPDis }[ 1 ]{ \fsoCP{ #1 }{ \fsDis } }
+ 
+%\newcommand{ \latTISLDis }{ \mathtt{N}(\fsDis) }
+%\newcommand{ \latTISLSmo }{ \mathtt{N}(\fsSmo) }
+
+\newcommand{ \qbopCI }{ \mathbin{ \mathop{ \qbop }\nolimits_{ \sssfont{ I } } } }
+
+
+\newcommand{ \quaF   }{ \rmQ^{**}_{\fsF} }
+\newcommand{ \quaDis }{ \rmQ^{**}_{\fsDis} }
+\newcommand{ \quaSeq }{ \rmQ^{**}_{\fsSeq} }

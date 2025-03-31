@@ -1,0 +1,44 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Supremal- und Infimalbild %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{ \simg }[ 1 ]{ \widehat{#1} }
+
+
+
+%%%%%%%%%%%%%%%%%%%%
+% Hüllenoperatoren %
+%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{ \opUscH }[ 1 ]{ \ceil{#1}  }
+\newcommand{ \opLscH }[ 1 ]{ \floor{#1} }
+
+
+
+\newcommand{ \esssup }{ \mathop{\operatorname{ess\,sup}} }
+\newcommand{ \essinf }{ \mathop{\operatorname{ess\,inf}} }
+
+
+
+%%%%%%%%%%%%%%%
+% Kegelideale %
+%%%%%%%%%%%%%%%
+\newcommand{ \fsLsc }{ \fsfont{ I }_+ }% Unterhalbstetige nichtnegative Funktionen
+\newcommand{ \fsUsc }{ \fsfont{ U }_+ }% Oberhalbstetige nichtnegative Funktionen
+
+\newcommand{ \fsLscSI }[ 1 ]{ \fsfont{ I }_{ + #1 } }
+\newcommand{ \fsUscSI }[ 1 ]{ \fsfont{ U }_{ + #1 } }
+
+\newcommand{ \fsLscbndcpt }{ \fsLscSI{ \mathrm{ c } } }
+\newcommand{ \fsLsccpt    }{ \fsLscSI{ \mathrm{ c } } }
+\newcommand{ \fsLscfinval }{ \fsLscSI{ \mathrm{ fv } } }
+\newcommand{ \fsLsclocbnd }{ \fsLscSI{ \mathrm{ lb } } }
+\newcommand{ \fsLsclb }{ \fsLscSI{ \mathrm{ lb } } }
+\newcommand{ \fsLscintcpt }{ \fsLscSI{ \mathrm{ ic } } }
+\newcommand{ \fsLscbnd    }{ \fsLscSI{ \mathrm{ b } } }
+\newcommand{ \fsLscvan    }{ \fsLscSI{ \mathrm{ v } } }
+\newcommand{ \fsLscpint   }[ 1 ]{ \fsLscSI{ \mathrm{ i }, #1 } }
+\newcommand{ \fsLscpow    }{ \fsLscSI{ \mathrm{ p } } }
+\newcommand{ \fsLscDpow   }{ \fsLscSI{ \mathrm{ *p } } }
+\newcommand{ \fsLsccau    }{ \fsLscSI{ \rightarrow } }
+\newcommand{ \fsLscaca    }{ \fsLscSI{ \leftarrow } }

@@ -1,0 +1,230 @@
+\newcommand{ \idWt  }{ \fsfont{ W } }
+\newcommand{ \fsWt  }{ \idWt }
+\newcommand{ \fsWtf }{ \idWt_{ \rmf } }
+\newcommand{ \fsWtb }{ \idWt_{ \rmb } }
+\newcommand{ \fsWtv }{ \idWt_{ \rmv } }
+\newcommand{ \fsWti }{ \idWt_{ \rmi } }
+\newcommand{ \fsWtc }{ \idWt_{ \rmc } }
+
+\newcommand{ \fsbWtb }{ \idWt_{ \mathrm{ b1 } } }
+\newcommand{ \fsbWtv }{ \idWt_{ \mathrm{ v1 } } }
+\newcommand{ \fsbWti }{ \idWt_{ \mathrm{ i1 } } }
+
+
+
+%\newcommand{ \idLCC }{ \frown }
+%\newcommand{ \idUCC }{ \frown }
+\newcommand{ \idLCC }{ \mathrlap{ \hspace{0.2pt}\_\hspace{-0.8pt}\_\hspace{-0.8pt}\_ }{ \frown } }
+\newcommand{ \idUCC }{ \underline{ \frown } }
+
+
+\newcommand{ \idSLCC }{ \frown }
+\newcommand{ \idSUCC }{ \frown }
+
+
+
+\newcommand{ \idIP }{ \tSi }
+\newcommand{ \idIPp }{ \tSi_+ }
+\newcommand{ \idQIP }{ \tSi^1 }
+\newcommand{ \idQIPp }{ \tSi^1_+ }
+
+
+\newcommand{ \idSS }{ \sqbullet }
+
+
+\newcommand{ \idZNb }{ \sssfont{ N } }
+
+\newcommand{ \clZNb }[ 1 ]{ ( #1 )^{\idZNb} }
+
+
+
+
+\newcommand{ \poCIip }[ 1 ]{ ( #1 )^{ \idIP }_{ \ssCI } }
+\newcommand{ \bpCIip }[ 1 ]{ ( #1 )^{ \idIP\idIP }_{ \ssCI } }
+
+\newcommand{ \poPWqip }[ 1 ]{ ( #1 )^{ \idQIP }_{ \ssPow } }
+\newcommand{ \bpPWqip }[ 1 ]{ ( #1 )^{ \idQIP\idQIP }_{ \ssPow } }
+
+
+\newcommand{ \opTSum }[ 1 ]{ \mathop{{\textstyle\sum}} #1 }
+\newcommand{ \opGSup }[ 1 ]{ \norm{ #1 } }
+\newcommand{ \opRGSup }[ 2 ]{ \lVert #1, #2 \rVert }
+
+
+
+\newcommand{ \oplIIS }[ 1 ]{ ( #1 )^{ \leq } }
+\newcommand{ \clAVCI }[ 1 ]{ \abs{ #1 }^{ \joiny } }
+\newcommand{ \clSCL }[ 1 ]{ ( #1 )^{ \idSS1 } }
+\newcommand{ \clSL }[ 1 ]{ ( #1 )^{ \idSS } }
+
+
+\newcommand{ \fsFcts }[ 2 ]{ { #1 }^{ #2 } }
+
+
+
+\newcommand{ \poIPpB }[ 1 ]{ ( #1 )^{ \idQIP }_{ \idBor } }
+\newcommand{ \poIPpT }[ 1 ]{ ( #1 )^{ \idQIP }_{ \idZNb } }
+
+\newcommand{ \bpIPpB }[ 1 ]{ ( #1 )^{ \idQIP\idQIP }_{ \idBor } }
+\newcommand{ \bpIPpT }[ 1 ]{ ( #1 )^{ \idQIP\idQIP }_{ \idZNb } }
+
+
+\newcommand{ \clCIN }[ 1 ]{ ( #1 )^{ \joiny }_{ \idZNb } }
+
+
+\newcommand{ \convCIB }{ \mathbin{ \convCI }_{ \idBor } }
+
+
+
+
+
+\newcommand{ \poCIBs }[ 1 ]{ ( #1 )^{ \idIP }_{ \idBor } }
+\newcommand{ \poCINs }[ 1 ]{ ( #1 )^{ \idIP }_{ \idZNb } }
+
+\newcommand{ \bpCIBs }[ 1 ]{ ( #1 )^{ \idIP }_{ \idBor } }
+\newcommand{ \bpCINs }[ 1 ]{ ( #1 )^{ \idIP\idIP }_{ \idZNb } }
+
+
+
+\newcommand{ \cres }{ \opopRresi{ \conv } }
+\newcommand{ \cresCI }{ \opopRresi{ \convCI } }
+\newcommand{ \cresCIB }{ \opopRresi{ \convCIB } }
+
+
+\newcommand{ \poCW   }[ 1 ]{ ( #1 )^{ \conv }_{ \fsWt } }
+\newcommand{ \poCCI  }[ 1 ]{ ( #1 )^{ \conv }_{ \ssCI }  }
+\newcommand{ \poCWB  }[ 1 ]{ ( #1 )^{ \conv }_{ \idBor } }
+\newcommand{ \poCCIB }[ 1 ]{ ( #1 )^{ \conv }_{ \idBor } }
+
+\newcommand{ \bpCW   }[ 1 ]{ ( #1 )^{ \conv\conv }_{ \fsWt } }
+\newcommand{ \bpCCI  }[ 1 ]{ ( #1 )^{ \conv\conv }_{ \ssCI }  }
+\newcommand{ \bpCWB  }[ 1 ]{ ( #1 )^{ \conv\conv }_{ \idBor } }
+\newcommand{ \bpCCIB }[ 1 ]{ ( #1 )^{ \conv\conv }_{ \idBor } }
+
+
+\newcommand{ \idvN }{ \mathtt{ N } }
+
+
+\newcommand{ \poCIBb }[ 1 ]{ ( #1 )^{ \idvN }_{ \idBor } }
+\newcommand{ \poCINb }[ 1 ]{ ( #1 )^{ \idvN }_{ \idZNb } }
+
+\newcommand{ \bpCIBb }[ 1 ]{ ( #1 )^{ \idvN\idvN }_{ \idBor } }
+\newcommand{ \bpCINb }[ 1 ]{ ( #1 )^{ \idvN\idvN }_{ \idZNb } }
+
+
+
+
+\newcommand{ \idvV }{ \mathtt{ V } }
+
+
+\newcommand{ \poCIBv }[ 1 ]{ ( #1 )^{ \idvV }_{ \idBor } }
+\newcommand{ \poCINv }[ 1 ]{ ( #1 )^{ \idvV }_{ \idZNb } }
+
+\newcommand{ \bpCIBv }[ 1 ]{ ( #1 )^{ \idvV\idvV }_{ \idBor } }
+\newcommand{ \bpCINv }[ 1 ]{ ( #1 )^{ \idvV\idvV }_{ \idZNb } }
+
+
+
+
+\newcommand{ \ssCIC }{ \ssCI^{ \idLCC } }
+
+
+\newcommand{ \ssLCC }{ \ssPow^{ \idLCC } }
+\newcommand{ \ssUCC }{ \ssPow^{ \idUCC } }
+
+
+\newcommand{ \ssSLCC }{ \ssPow^{ \idSLCC } }
+\newcommand{ \ssSUCC }{ \ssPow^{ \idSUCC } }
+
+
+\newcommand{ \poUCC }[ 1 ]{ ( #1 )^{ \cleq } }
+\newcommand{ \poLCC }[ 1 ]{ ( #1 )^{ \cgeq } }
+
+
+\newcommand{ \bpCIC }[ 1 ]{ ( #1 )^{ \idLCC } }
+
+\newcommand{ \bpLCC }[ 1 ]{ ( #1 )^{ \idLCC } }
+\newcommand{ \bpUCC }[ 1 ]{ ( #1 )^{ \idUCC } }
+
+\newcommand{ \clLCC }[ 1 ]{ ( #1 )^{ \idLCC } }
+\newcommand{ \clUCC }[ 1 ]{ ( #1 )^{ \idUCC } }
+
+
+
+
+
+\newcommand{ \ssCIbp }{ \ssCI^{ \rmb } }
+\newcommand{ \ssCIvp }{ \ssCI^{ \rmv } }
+\newcommand{ \ssCIsp }{ \ssCI^{ \idIP } }
+
+\newcommand{ \ssCIcp }{ \ssCI^{ \conv } }
+%\newcommand{ \ssCIsp }{ \ssCI^{ \sconv } }
+
+
+\newcommand{ \ssCIBbp }{ \ssCIB^{ \rmb } }
+\newcommand{ \ssCIBvp }{ \ssCIB^{ \rmv } }
+\newcommand{ \ssCIBsp }{ \ssCIB^{ \idIP } }
+
+\newcommand{ \ssCIBcp }{ \ssCIB^{ \conv } }
+
+
+
+
+\newcommand{ \ssCIt }{ \ssCI_{ \idT } }
+\newcommand{ \ssCIT }{ \ssCI_{ \idTS } }
+
+
+
+\newcommand{ \ssCIB }{ \sssfont{ IB } }
+\newcommand{ \ssCIBt }{ \ssCIB_{ \idT } }
+\newcommand{ \ssCIBT }{ \ssCIB_{ \idTS } }
+
+\newcommand{ \ssCIN }{ \sssfont{ IN } }
+\newcommand{ \ssCINt }{ \ssCIN_{ \idT } }
+\newcommand{ \ssCINT }{ \ssCIN_{ \idTS } }
+
+
+
+
+\newcommand{ \opPowSing }[ 1 ]{ ( #1 )^{ \ssPowPow }_{ \{ - \} } }
+\newcommand{ \opCIBSing }[ 1 ]{ ( #1 )^{ \ssCIB }_{ \{ - \} } }
+
+
+\newcommand{ \opPWUni }[ 1 ]{ ( #1 )^\cup_{ \sssfont{P} } }
+\newcommand{ \opCIUni }[ 1 ]{ ( #1 )^\cup_{ \sssfont{I} } }
+
+
+
+
+\newcommand{ \poM }[ 2 ]{ ( #1 )^{ {\mult} #2 } }
+\newcommand{ \poMU }[ 2 ]{ ( #1 )^{ {\mult} #2 1 } }
+
+\newcommand{ \poMb }[ 1 ]{  \poM{ #1 }{ \rmb } }
+\newcommand{ \poMv }[ 1 ]{  \poM{ #1 }{ \rmv } }
+\newcommand{ \poMi }[ 1 ]{  \poM{ #1 }{ \rmi } }
+
+\newcommand{ \poMUb }[ 1 ]{  \poMU{ #1 }{ \rmb } }
+\newcommand{ \poMUv }[ 1 ]{  \poMU{ #1 }{ \rmv } }
+\newcommand{ \poMUi }[ 1 ]{  \poMU{ #1 }{ \rmi } }
+
+
+\newcommand{ \bpM }[ 2 ]{ ( #1 )^{ {\mult}{\mult} #2 } }
+\newcommand{ \bpMU }[ 2 ]{ ( #1 )^{ {\mult}{\mult} #2 1 } }
+
+\newcommand{ \bpMb }[ 1 ]{  \bpM{ #1 }{ \rmb } }
+\newcommand{ \bpMv }[ 1 ]{  \bpM{ #1 }{ \rmv } }
+\newcommand{ \bpMi }[ 1 ]{  \bpM{ #1 }{ \rmi } }
+
+\newcommand{ \bpMUb }[ 1 ]{  \bpMU{ #1 }{ \rmb } }
+\newcommand{ \bpMUv }[ 1 ]{  \bpMU{ #1 }{ \rmv } }
+\newcommand{ \bpMUi }[ 1 ]{  \bpMU{ #1 }{ \rmi } }
+
+
+
+\newcommand{ \ssCIb }{ \ssCI^{ \rmb } }
+\newcommand{ \ssCIv }{ \ssCI^{ \rmv } }
+\newcommand{ \ssCIi }{ \ssCI^{ \rmi } }
+
+\newcommand{ \ssLSb }{ \ssLS^{ \rmb } }
+\newcommand{ \ssLSv }{ \ssLS^{ \rmv } }
+\newcommand{ \ssLSi }{ \ssLS^{ \rmi } }

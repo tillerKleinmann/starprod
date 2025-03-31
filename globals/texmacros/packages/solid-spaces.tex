@@ -1,0 +1,144 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Translation, Spiegelung %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{ \idT }{ \textup{\texttau} }
+\newcommand{ \idTS }{ \mathrm{T} }
+%\newcommand{ \idTS }{ \overline{ \idSRI } }
+\newcommand{ \idS }{ \textup{\textsigma} }
+
+
+\newcommand{ \opS }[ 1 ]{ { #1 }^{ \idS } }
+
+%\newcommand{ \opT }[ 2 ]{ { #1 }^{ \idT #2 } }
+\newcommand{ \opT }[ 2 ]{ \mathrm{T}_{#2} #1 }
+\newcommand{ \sroppT }[ 2 ]{ #1 . \idT #2 }
+%\newcommand{ \opTH }[ 1 ]{ \operatorname{\overline{T}}_{ #1 } }
+
+%\newcommand{ \opTS }[ 2 ]{ { #1 }^{ \idTS #2 } }
+\newcommand{ \opTS }[ 2 ]{ \overline{\mathrm{T}}_{#2} #1 }
+\newcommand{ \sropTS }[ 2 ]{ #1 . \idTS #2 }
+
+
+
+
+\newcommand{ \opTE }[ 2 ]{ \abs{ #1 }_{ #2 } }
+\newcommand{ \OpTE }[ 2 ]{ \Abs{ #1 }_{ #2 } }
+
+
+
+
+
+%\newcommand{ \idSolid }{ \absv }
+\newcommand{ \idSolid }{ \sqbullet }
+
+%\newcommand{ \fsoAVCI }[ 1 ]{ \abs{ #1 }^{ \joiny }_{ \ssBnd } }
+\newcommand{ \fsoAVCI }[ 1 ]{ \abs{ #1 }^{\joiny}_{*\ssBnd(\fsTest)} }
+\newcommand{ \fsoTISL }[ 1 ]{ ( #1 )^{ \idSolid }_{ \fsDis } }
+%\newcommand{ \fsoTISL }[ 1 ]{ \brClo{ #1 }^{ \idSolid }_{ \fsDis } }
+
+\newcommand{ \opSMSDis }[ 2 ]{ ( #1 )^{ #2 \idSolid }_{ \fsDis } }
+
+\newcommand{ \fsoDisdav }[ 1 ]{ }
+\newcommand{ \fsDisdav }[ 1 ]{ ( #1 )^{ \preceq }_{ \fsDis } }
+\newcommand{ \fsDiswdav }[ 1 ]{ ( #1 )^{ \preceq, \mathfrak{ F } }_{ \fsDis } }
+
+\newcommand{ \fsoDAV }[ 1 ]{ \fsDisdav{ #1 } }
+
+
+
+
+\newcommand{ \ssSBorno }[ 1 ]{ \sssfont{ B }^{ \conv }( #1 ) }
+\newcommand{ \ssSTopo  }[ 1 ]{ \sssfont{ T }^{ \conv }( #1 ) }
+
+\newcommand{ \ssSBornov }{ \sssfont{ B }^{ \conv } }
+\newcommand{ \ssSTopov  }{ \sssfont{ T }^{ \conv } }
+
+
+\newcommand{ \fsWtFlat  }[ 2 ]{ { #1 }_{ \idTS\flat  }( #2 ) }
+\newcommand{ \fsWtSharp }[ 2 ]{ { #1 }_{ \idTS\sharp }( #2 ) }
+
+% \newcommand{ \idSTI }[ 1 ]{ { #1 }_{ \idTS } }
+% \newcommand{ \idSTIf }[ 1 ]{ { #1 }_{ \idTS\flat  } }
+% \newcommand{ \idSTIs }[ 1 ]{ { #1 }_{ \idTS\sharp } }
+
+\newcommand{ \idSRI }{ \rmT }
+\newcommand{ \idSRIp }{ \Pi\idSRI }
+\newcommand{ \idSRIi }{ \Si\idSRI }
+
+%\newcommand{ \idSTI }{ {\abs{\tta}} }
+\newcommand{ \idSTI }{ {\tta} }
+\newcommand{ \idSTIp }{ {\Pi\idSTI} }
+\newcommand{ \idSTIi }{ {\Si\idSTI} }
+
+\newcommand{ \fsSmoWtf }[ 1 ]{ \fsWtFlat{ \fsSmo }{ #1 } }
+\newcommand{ \fsSmoWts }[ 1 ]{ \fsWtSharp{ \fsSmo }{ #1 } }
+\newcommand{ \fsDisWtf }[ 1 ]{ \fsWtFlat{ \fsDis }{ #1 } }
+\newcommand{ \fsDisWts }[ 1 ]{ \fsWtSharp{ \fsDis }{ #1 } }
+
+
+\newcommand{ \fssWtFlat  }[ 3 ]{ { #1 }^{ #2 }_{ \idTS\flat  }( #3 ) }
+\newcommand{ \fssWtSharp }[ 3 ]{ { #1 }^{ #2 }_{ \idTS\sharp }( #3 ) }
+
+\newcommand{ \fssSmoWtfZ }[ 1 ]{ \fssWtFlat{ \fsSmo }{ \idZNb }{ #1 } }
+\newcommand{ \fssSmoWtsZ }[ 1 ]{ \fssWtSharp{ \fsSmo }{ \idZNb }{ #1 } }
+\newcommand{ \fssDisWtfZ }[ 1 ]{ \fssWtFlat{ \fsDis }{ \idZNb }{ #1 } }
+\newcommand{ \fssDisWtsZ }[ 1 ]{ \fssWtSharp{ \fsDis }{ \idZNb }{ #1 } }
+
+\newcommand{ \fssSmoWtfB }[ 1 ]{ \fssWtFlat{ \fsSmo }{ \idBor }{ #1 } }
+\newcommand{ \fssSmoWtsB }[ 1 ]{ \fssWtSharp{ \fsSmo }{ \idBor }{ #1 } }
+\newcommand{ \fssDisWtfB }[ 1 ]{ \fssWtFlat{ \fsDis }{ \idBor }{ #1 } }
+\newcommand{ \fssDisWtsB }[ 1 ]{ \fssWtSharp{ \fsDis }{ \idBor }{ #1 } }
+
+
+
+\newcommand{ \fsSri }[ 1 ]{ \fsLeb{ \infi }_{ \idTS }( #1 ) }
+\newcommand{ \FsSri }[ 1 ]{ \fsLeb{ \infi }_{ \idTS }\left( #1 \right) }
+
+\newcommand{ \fsMsrTS }[ 1 ]{ \fsMsr_{ \idTS }( #1 ) }
+\newcommand{ \FsMsrTS }[ 1 ]{ \fsMsr_{ \idTS }\BrArg{ #1 } }
+
+\newcommand{ \fsLebTS }[ 1 ]{ \fsL_{ \idTS }( #1 ) }
+\newcommand{ \FsLebTS }[ 1 ]{ \fsL_{ \idTS }\BrArg{ #1 } }
+
+
+\newcommand{ \fsSeqTS }[ 1 ]{ \fsSeq_{ \idTS }( #1 )            }
+\newcommand{ \FsSeqTS }[ 1 ]{ \fsSeq_{ \idTS }\left( #1 \right) }
+
+
+
+\newcommand{ \fsSmoTSF }[ 1 ]{ \fsWtFlat{ \fsSmo }{ #1 } }
+\newcommand{ \fsSmoTSS }[ 1 ]{ \fsWtSharp{ \fsSmo }{ #1 } }
+\newcommand{ \fsDisTSF }[ 1 ]{ \fsWtFlat{ \fsDis }{ #1 } }
+\newcommand{ \fsDisTSS }[ 1 ]{ \fsWtSharp{ \fsDis }{ #1 } }
+
+
+
+
+
+\newcommand{ \fsSTI  }[ 1 ]{ { #1 }_{ \idTS  } }
+\newcommand{ \fsSTId }[ 1 ]{ { #1 }_{ \idTS' } }
+
+\newcommand{ \fssSTI  }[ 2 ]{ { #1 }^{ #2 }_{ \idTS  } }
+\newcommand{ \fssSTId }[ 2 ]{ { #1 }^{ #2 }_{ \idTS' } }
+
+\newcommand{ \fsbSTI  }[ 1 ]{ { #1 }^{ \idBor }_{ \idTS  } }
+\newcommand{ \fsbSTId }[ 1 ]{ { #1 }^{ \idBor }_{ \idTS' } }
+
+\newcommand{ \fszSTI  }[ 1 ]{ { #1 }^{ \idZNb }_{ \idTS  } }
+\newcommand{ \fszSTId }[ 1 ]{ { #1 }^{ \idZNb }_{ \idTS' } }
+
+
+% \newcommand{ \fsSmoSTI  }{ \fsSTI{  \fsSmo } }
+% \newcommand{ \fsSmoSTId }{ \fsSTId{ \fsSmo } }
+% \newcommand{ \fsDisSTI  }{ \fsSTI{  \fsDis } }
+% \newcommand{ \fsDisSTId }{ \fsSTId{ \fsDis } }
+
+\newcommand{ \fszSmoSTI  }{ \fszSTI{  \fsSmo } }
+\newcommand{ \fszSmoSTId }{ \fszSTId{ \fsSmo } }
+\newcommand{ \fszDisSTI  }{ \fszSTI{  \fsDis } }
+\newcommand{ \fszDisSTId }{ \fszSTId{ \fsDis } } 
+
+\newcommand{ \fsbSmoSTI  }{ \fsbSTI{  \fsSmo } }
+\newcommand{ \fsbSmoSTId }{ \fsbSTId{ \fsSmo } }
+\newcommand{ \fsbDisSTI  }{ \fsbSTI{  \fsDis } }
+\newcommand{ \fsbDisSTId }{ \fsbSTId{ \fsDis } }

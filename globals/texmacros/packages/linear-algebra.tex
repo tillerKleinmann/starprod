@@ -1,0 +1,177 @@
+% \newcommand{ \ska }[ 2 ]{ \langle #1 \,|\, #2 \rangle }
+% \newcommand{ \Ska  }[ 2 ]{ \left\langle #1 \,\middle|\, #2 \right\rangle }
+\newcommand{ \ska }[ 2 ]{ \langle #1 , #2 \rangle }
+\newcommand{ \Ska  }[ 2 ]{ \left\langle #1 \,,\, #2 \right\rangle }
+\newcommand{ \skav }{ \ska{ \cdot }{ \cdot } }
+
+
+\newcommand{ \duasys  }[ 4 ]{ {}_{#1}\langle #3 , #4 \rangle_{#2} }
+\newcommand{ \Duasys  }[ 4 ]{ {}_{#1}\left\langle #3 \,,\, #4 \right\rangle_{#2} }
+\newcommand{ \duasysv }[ 2 ]{ \duasys{#1}{#2}{\cdot}{\cdot} }
+
+
+% \newcommand{ \opDom }{ \operatorname{dom} }
+% \newcommand{ \opRan }{ \operatorname{ran} }
+% \newcommand{ \opKer }{ \operatorname{ker} }
+\newcommand{ \opSpan }{ \operatorname{span} }
+% \newcommand{ \opDim }{ \operatorname{dim} }
+
+
+\newcommand{ \opId   }{ \operatorname{Id} }
+% \newcommand{ \opZero }{ \operatorname{\mathbf{0}} }
+
+
+%\newcommand{ \opLCTBSub  }{ \operatorname{\mathtt{lctbSub}} }
+%\newcommand{ \opLCTBId }{ \operatorname{\mathtt{lctbId}} }
+\newcommand{ \opLCTBSub  }{ \operatorname{{}_\mathtt{lctb}\mathtt{Sub}} }
+\newcommand{ \opLCTBId }{ \operatorname{{}_\mathtt{lctb}\mathtt{Id}} }
+\newcommand{ \catSublctb }{ \operatorname{{}_\mathtt{lctb}\mathtt{Sub}} }
+\newcommand{ \catIdlctb  }{ \operatorname{{}_\mathtt{lctb}\mathtt{Id}}  }
+\newcommand{ \catSublcs }{ \operatorname{{}_\mathtt{lc}\mathtt{Sub}} }
+\newcommand{ \catIdlcs  }{ \operatorname{{}_\mathtt{lc}\mathtt{Id}}  }
+
+\newcommand{ \idAC  }{ {\mathtt{acx}} }
+
+% \newcommand{ \clAC }[ 1 ]{ \brClo{ #1 }_\idAC }
+% \newcommand{ \ClAC }[ 1 ]{ \BrClo{ #1 }_\idAC }
+% \newcommand{ \clmAC }[ 2 ]{ \brmClo{ #1 }{ #2 }_\idAC }
+% \newcommand{ \ClmAC }[ 2 ]{ \BrmClo{ #1 }{ #2 }_\idAC }
+
+%\newcommand{ \opCvx }{ \mathrm{C} }
+%\newcommand{ \opCvx }{ \operatorname{cvx} }
+\newcommand{ \opCvx }{ \operatorname{co} }
+
+\newcommand{ \clCvx }[ 1 ]{ \opCvx( #1 ) }
+\newcommand{ \ClCvx }[ 1 ]{ \opCvx\left( #1 \right) }
+\newcommand{ \clmCvx }[ 2 ]{ \opCvx( \brmSet{ #1 }{ #2 } ) }
+\newcommand{ \ClmCvx }[ 2 ]{ \opCvx\left( \BrmSet{ #1 }{ #2 } \right) }
+
+
+\newcommand{ \opAC }{ \tGa }
+
+\newcommand{ \clAC }[ 1 ]{ \opAC( #1 ) }
+\newcommand{ \ClAC }[ 1 ]{ \opAC\left( #1 \right) }
+\newcommand{ \clmAC }[ 2 ]{ \opAC( \brmSet{ #1 }{ #2 } ) }
+\newcommand{ \ClmAC }[ 2 ]{ \opAC\left( \BrmSet{ #1 }{ #2 } \right) }
+
+
+%\newcommand{ \opCir }{ \mathrm{K} }
+\newcommand{ \opCir }{ \operatorname{circ} }
+
+\newcommand{ \clCir }[ 1 ]{ \opCir( #1 ) }
+\newcommand{ \ClCir }[ 1 ]{ \opCir\left( #1 \right) }
+\newcommand{ \clmCir }[ 2 ]{ \opCir( \brmSet{ #1 }{ #2 } ) }
+\newcommand{ \ClmCir }[ 2 ]{ \opCir\left( \BrmSet{ #1 }{ #2 } \right) }
+
+
+\newcommand{ \opCone }{ \operatorname{cone} }
+
+\newcommand{ \clCone }[ 1 ]{ \opCone( #1 ) }
+\newcommand{ \ClCone }[ 1 ]{ \opCone\left( #1 \right) }
+\newcommand{ \clmCone }[ 2 ]{ \opCone( \brmSet{ #1 }{ #2 } ) }
+\newcommand{ \ClmCone }[ 2 ]{ \opCone\left( \BrmSet{ #1 }{ #2 } \right) }
+
+
+%\newcommand{ \opSol }{ \mathrm{S} }
+\newcommand{ \opSol }{ \operatorname{sol} }
+
+% \newcommand{ \clSol }[ 1 ]{ \brClo{ #1 }_\absv }
+% \newcommand{ \ClSol }[ 1 ]{ \BrClo{ #1 }_\absv }
+% \newcommand{ \clmSol }[ 2 ]{ \brmClo{ #1 }{ #2 }_\absv }
+% \newcommand{ \ClmSol }[ 2 ]{ \BrmClo{ #1 }{ #2 }_\absv }
+\newcommand{ \clSol }[ 1 ]{ \opSol( #1 ) }
+\newcommand{ \ClSol }[ 1 ]{ \opSol\left( #1 \right) }
+\newcommand{ \clmSol }[ 2 ]{ \clSol{ \brmSet{ #1 }{ #2 } } }
+\newcommand{ \ClmSol }[ 2 ]{ \ClSol{ \BrmSet{ #1 }{ #2 } } }
+
+
+\newcommand{ \opACS }{ \tGa_\absv }
+%\newcommand{ \opACS }{ \opAC\opSol }
+
+\newcommand{ \clACS }[ 1 ]{ \opACS( #1 ) }
+\newcommand{ \ClACS }[ 1 ]{ \opACS\left( #1 \right) }
+\newcommand{ \clmACS }[ 2 ]{ \opACS( \brmSet{ #1 }{ #2 } ) }
+\newcommand{ \ClmACS }[ 2 ]{ \opACS\left( \BrmSet{ #1 }{ #2 } \right) }
+
+
+\newcommand{ \idLin }{ {\mathtt{lin}} }
+
+% \newcommand{ \clLin }[ 1 ]{ \brClo{ #1 }_\idLin }
+% \newcommand{ \ClLin }[ 1 ]{ \BrClo{ #1 }_\idLin }
+% \newcommand{ \clmLin }[ 2 ]{ \brmClo{ #1 }{ #2 }_\idLin }
+% \newcommand{ \ClmLin }[ 2 ]{ \BrmClo{ #1 }{ #2 }_\idLin }
+\newcommand{ \clLin }[ 1 ]{ \brClo{ #1 } }
+\newcommand{ \ClLin }[ 1 ]{ \BrClo{ #1 } }
+\newcommand{ \clmLin }[ 2 ]{ \brmClo{ #1 }{ #2 } }
+\newcommand{ \ClmLin }[ 2 ]{ \BrmClo{ #1 }{ #2 } }
+
+\newcommand{ \clCLin }[ 1 ]{ \brClo{ #1 }_{\nrC,+} }
+\newcommand{ \ClCLin }[ 1 ]{ \BrClo{ #1 }_{\nrC,+} }
+\newcommand{ \clmCLin }[ 2 ]{ \brmClo{ #1 }{ #2 }_{\nrC,+} }
+\newcommand{ \ClmCLin }[ 2 ]{ \BrmClo{ #1 }{ #2 }_{\nrC,+} }
+
+
+\newcommand{ \idId }{ {\mathtt{Id}} }
+
+\newcommand{ \clId }[ 1 ]{ \brClo{ #1 }_\idId }
+\newcommand{ \ClId }[ 1 ]{ \BrClo{ #1 }_\idId }
+\newcommand{ \clmId }[ 2 ]{ \brmClo{ #1 }{ #2 }_\idId }
+\newcommand{ \ClmId }[ 2 ]{ \BrmClo{ #1 }{ #2 }_\idId }
+
+
+\newcommand{ \idCI }{ {\mathtt{CI}} }
+
+\newcommand{ \clCI }[ 1 ]{ \brClo{ #1 }_\idCI }
+\newcommand{ \ClCI }[ 1 ]{ \BrClo{ #1 }_\idCI }
+\newcommand{ \clmCI }[ 2 ]{ \brmClo{ #1 }{ #2 }_\idCI }
+\newcommand{ \ClmCI }[ 2 ]{ \BrmClo{ #1 }{ #2 }_\idCI }
+
+\newcommand{ \idCIT }{ {\mathtt{CIT}} }
+
+\newcommand{ \clCIT }[ 1 ]{ \brClo{ #1 }_\idCIT }
+\newcommand{ \ClCIT }[ 1 ]{ \BrClo{ #1 }_\idCIT }
+\newcommand{ \clmCIT }[ 2 ]{ \brmClo{ #1 }{ #2 }_\idCIT }
+\newcommand{ \ClmCIT }[ 2 ]{ \BrmClo{ #1 }{ #2 }_\idCIT }
+
+
+\newcommand{ \idLBor }{ \mathtt{LB} }
+
+\newcommand{ \clLBor }[ 1 ]{ \brClo{ #1 }{ \idLBor } }
+\newcommand{ \ClLBor }[ 1 ]{ \BrClo{ #1 }{ \idLBor } }
+
+
+\newcommand{ \idCIBor }{ \mathtt{CIB} }
+
+\newcommand{ \clCIBor }[ 1 ]{ \brClo{ #1 }{ \idCIBor } }
+\newcommand{ \ClCIBor }[ 1 ]{ \BrClo{ #1 }{ \idCIBor } }
+
+
+
+\newcommand{ \opLin   }{ \operatorname{lin}    }
+\newcommand{ \opCLin  }{ \operatorname{clin}    }
+
+\newcommand{ \opLinp   }{ \operatorname{lin}_+  }
+\newcommand{ \opCLinp  }{ \operatorname{clin}_+ }
+
+\newcommand{ \opLina  }{ \operatorname{lin}_\absv  }
+\newcommand{ \opCLina }{ \operatorname{clin}_\absv }
+
+\newcommand{ \opHmg }{ \operatorname{hmg} }
+
+\newcommand{ \opSubl  }{ \operatorname{subl}   }
+\newcommand{ \opSublp }{ \operatorname{subl_+} }
+
+\newcommand{ \opSNF   }{ \operatorname{snf} }
+\newcommand{ \opLSNF  }{ \operatorname{lsnf} }
+
+\newcommand{ \opCSNF   }{ \operatorname{csnf} }
+\newcommand{ \opCLSNF  }{ \operatorname{clsnf} }
+
+\newcommand{ \opLF  }{ \operatorname{lf}  }
+\newcommand{ \opCLF }{ \operatorname{clf} }
+
+\newcommand{ \opSN  }{ \operatorname{sn}  }
+\newcommand{ \opLSN }{ \operatorname{lsn} }
+
+\newcommand{ \opCSN  }{ \operatorname{csn}  }
+\newcommand{ \opCLSN }{ \operatorname{clsn} }

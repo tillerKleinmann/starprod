@@ -1,0 +1,20 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Symbole für allgemeine Quantaloperationen %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{ \qbop }{ \mathbin{\bullet} }
+%\newcommand{ \rdiv }{ \mathbin{\mathrlap{/}{\qbop}} }
+
+\newcommand{ \opopRresi }[ 1 ]{ \mathbin{ \mathrlap{ / }{ #1 } } }
+\newcommand{ \opopLresi }[ 1 ]{ \mathbin{ \mathrlap{ \backslash }{ #1 } } }
+
+\newcommand{ \rdiv }{  \opopRresi{ \qbop } }
+\newcommand{ \ldiv }{  \opopLresi{ \qbop } }
+
+\newcommand{ \qdual }[ 2 ]{ { #1 }^{ \qbop #2 } }
+\newcommand{ \qclsr }[ 2 ]{ { #1 }^{ \qbop\qbop #2 } }
+
+\newcommand{ \qbopb }{ \mathop{\circ} }
+\newcommand{ \rdivb }{ \mathop{\mathrlap{/}{\qbopb}} }
+\newcommand{ \qdualb }[ 2 ]{ { #1 }^{\qbopb #2} }
+\newcommand{ \qclsrb }[ 2 ]{ { #1 }^{\qbopb\qbopb #2} }

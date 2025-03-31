@@ -1,0 +1,143 @@
+\DeclareFontFamily{U}{mathb}{\hyphenchar\font45}
+\DeclareFontShape{U}{mathb}{m}{n}%
+{<-6> mathb5 %
+ <6-7> mathb6
+ <7-8> mathb7 %
+ <8-9> mathb8 %
+ <9-10> mathb9 %
+ <10-12> mathb10 %
+ <12-> mathb12 }%
+ {}
+\DeclareSymbolFont{mathb}{U}{mathb}{m}{n}
+\DeclareMathSymbol{\sqbullet}{\mathbin}{mathb}{"0D}
+\DeclareMathSymbol{\sqbollet}{\mathbin}{mathb}{"05}
+
+%%%%%%%%%%%
+% Faltung %
+%%%%%%%%%%%
+\newcommand{ \conv }{ \mathbin{*} }
+\newcommand{ \tconv }{ \mathop{\textstyle\bigasterisk} }
+\newcommand{ \dconv }{ \mathop{\bigasterisk} }
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% Potenzierte Faltung %
+%%%%%%%%%%%%%%%%%%%%%%%
+%\newcommand{ \pconv }[ 1 ]{ \mathbin{\mathop{*}\limits_{#1}} }
+%\newcommand{ \pconv }[ 1 ]{ \mathbin{*_{#1}} }
+%\newcommand{ \pconv }[ 1 ]{ \mathbin{\overset{#1}{*}} }
+\newcommand{ \pconv }[ 1 ]{ \mathbin{*^{#1}} }
+
+
+%%%%%%%%%%%%%%%%%%%
+% Supremalfaltung %
+%%%%%%%%%%%%%%%%%%%
+\newcommand{ \sconv }{ \mathbin{\sqbullet} }
+
+\newcommand{ \oldsconv }{ \mathbin{\triangle\hspace*{-1.39ex}\cdot\hspace*{.95ex}} }% supremale Faltung
+\newcommand{ \oldiconv }{ \mathbin{\raisebox{.4ex}{\rotatebox[origin=c]{180}{$\scnv$}}} }% infimale Faltung
+\newcommand{ \oldsldconv }[ 2 ]{ #1\mathbin{\hspace*{-0.35ex}\,{\triangle\hspace*{-1.6ex}\backslash\hspace*{1.1ex}}\hspace*{-0.35ex}}#2 }% supremale linksseitige Entfaltung
+\newcommand{ \oldsrdconv }[ 2 ]{ #1\mathbin{\hspace*{-0.35ex}\,{\triangle\hspace*{-1.5ex}/\hspace*{1ex}}\hspace*{-0.35ex}}#2 }% supremale rechtsseitige Entfaltung
+
+\newcommand{ \cdiv }{ \mathbin{ \mathrlap{ / } \conv } }
+\newcommand{ \scdiv }{ \mathbin{ \mathrlap{ / } \sconv } }
+
+
+\newcommand{ \scrdiv }{ \mathop{\mathrlap{/ }{ \sconv}} }
+\newcommand{ \crdiv }{ \mathop{\mathrlap{/ }{ \conv}} }
+
+\newcommand{ \scrdivLsc }{ \mathop{\opLscH{\mathrlap{/ }{ \sconv}}} }
+
+
+\newcommand{ \sconvUsc }{ \mathbin{\opUscH{\sqbullet}} }
+
+%%%%%%%%%%%%%%%%%%
+% Infimalfaltung %
+%%%%%%%%%%%%%%%%%%
+\newcommand{ \iconv }{ \mathbin{\sqbollet} }
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Kegelideal Versionen %
+%%%%%%%%%%%%%%%%%%%%%%%%
+%\newcommand{ \convCI }{ \overset{ \joiny }{ \conv } }
+%\newcommand{ \convCI }{ \mathbin{ \widehat{ \conv } } }
+\newcommand{ \convCI }{ \mathbin{ \widecheck{ \conv } } }
+\newcommand{ \convLS }{ \mathbin{ \conv_{ \ssLS } } }
+%\newcommand{ \sconvCI }{ \sconv^{\joiny}}
+%\newcommand{ \convCI }{ \mathbin{\mathop{\conv}\nolimits_{\sssfont{ I }}} }
+\newcommand{ \sconvCI }{ \mathbin{\mathop{\sconv}\nolimits_{\sssfont{ I }}} }
+
+%\newcommand{ \convCIP }{ \mathbin{\mathop{\conv}\nolimits_{\sssfont{ I },\mathrm{ P }}} }
+%\newcommand{ \convCIP }{ \mathbin{\mathop{\widetilde{ \conv }}\nolimits_{\sssfont{ I }}} }
+\newcommand{ \convCIP }{ \mathbin{\widetilde{ \conv }} }
+
+\newcommand{ \sconvCIUsc }{ \mathbin{\mathop{\opUscH{\sqbullet}}\nolimits_{\sssfont{ I }}} }
+
+\newcommand{ \cdivCI }{ \mathbin{ \mathop{ \cdiv }\nolimits_{ \sssfont{ I } } } }
+
+\newcommand{ \cdivCIT }{ \mathbin{ \mathop{ \cdiv }\nolimits_{ \mathrm{ T } } } }
+
+\newcommand{ \cdivCIP }{ \mathbin{ \mathop{ \mathbin{ \mathrlap{ / } \widetilde{\conv} } } } }
+
+
+\newcommand{ \PV }{ \mathrm{PV} }
+
+
+
+\newcommand{ \opd }{ \mathrm{ d } }
+\newcommand{ \intd }[ 1 ]{ \,\opd{ #1 } }
+%\newcommand{ \diff }{ \mathrm{d}}
+\newcommand{ \tint }{ { \textstyle\int } }
+
+
+\newcommand{ \rska }[ 2 ]{ \ska{ #1 }{ #2 }^\vee }
+\newcommand{ \rTska }[ 3 ]{ \ska{ #1 }{ #2 }^\vee_{ #3 } }
+
+\newcommand{ \convPol }[ 1 ]{ \left( #1 \right)^{ \conv 1 } }
+\newcommand{ \convPolct }[ 2 ]{ \left( #1 \right)^{ \conv 1 }_{ #2 } }
+
+\newcommand{ \convPolss }[ 1 ]{ \left( #1 \right)^{ \conv 1 } }
+\newcommand{ \convPolssct }[ 1 ]{ \left( #1 \right)^{ \conv 1 }_{ \mathrm{ T } } }
+
+%\newcommand{ \convPolTop }[ 1 ]{ { #1 }^{ \conv 1 } }
+%\newcommand{ \convPolTopct }[ 1 ]{ { #1 }^{ \conv 1 }_{ \mathrm{ T } } }
+
+%\newcommand{ \convPolBor }[ 1 ]{ { #1 }^{ \conv 1 } }
+%\newcommand{ \convPolBorct }[ 1 ]{ { #1 }^{ \conv 1 }_{ \mathrm{ T } } }
+
+
+\newcommand{ \opCod }[ 2 ]{ { #1 }^{ \Delta #2 } }
+%\newcommand{ \tens }{ \otimes }
+
+
+
+\newcommand{ \opTIl }[ 1 ]{ {#1}{}_{ \mathrm{ T } } }
+\newcommand{ \opCD }[ 1 ]{ {#1}{}^* }
+
+
+\newcommand{ \sfCodmsrat }[ 2 ]{ \opCod{ \delta }{ #1 }_{ #2 } }
+\newcommand{ \sfCodmsr }[ 1 ]{ \sfCodmsrat{ #1 }{} }
+
+
+
+\newcommand{ \sfdeo }{ \tde }
+\newcommand{ \sfde  }[ 1 ]{ \sfdeo_{ #1 } }
+
+%\newcommand{ \sfDrcSeq }[ 1 ]{ \tDe( #1 ) }
+%\newcommand{ \SfDrcSeq }[ 1 ]{ \tDe\left( #1 \right) }
+
+\newcommand{ \sfDe }[ 1 ]{ \tDe( #1 ) }
+\newcommand{ \SfDe }[ 1 ]{ \tDe\left( #1 \right) }
+
+
+
+%\newcommand{ \convfrac }[ 2 ]{ \mathrlap{\conv}{-}\hspace{-2pt}\frac{ #1 }{ #2 } }
+%\newcommand{ \convfrac }[ 2 ]{ { \mathop{ \,{\mathrlap{\conv}\hspace{-2pt}\frac{ \hphantom{\conv} #1 }{ \hphantom{\conv} #2 } } } } }
+\newcommand{ \convfrac }[ 2 ]{ { \,{\mathrlap{\conv}\hspace{-2pt}\frac{ \hphantom{\conv} #1 }{ \hphantom{\conv} #2 } } } }
+
+
+\newcommand{ \clConv }[ 1 ]{ \brClo{ #1 }_* }
+
+
+\newcommand{ \clCCA }[ 1 ]{ \brClo{ #1 }_{\nrC,+,*} }

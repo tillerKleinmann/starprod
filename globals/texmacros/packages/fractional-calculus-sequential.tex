@@ -1,0 +1,82 @@
+\newcommand{ \opDrcR }{ \operatorname{R} }
+\newcommand{ \opDrcP }{ \operatorname{P} }
+\newcommand{ \opDrcV }{ \operatorname{V} }
+
+
+\newcommand{ \opCPR }[ 1 ]{ \opDrcR^{ #1 } }
+\newcommand{ \opCPP }[ 1 ]{ \opDrcP^{ #1 } }
+\newcommand{ \opCPV }[ 1 ]{ \opDrcV^{ #1 } }
+
+
+\newcommand{ \fsDisVoo }{ \fsDis_{ 0+, \sfdeo } }
+\newcommand{ \fsDisVooR }{ \fsDis_{ 0+, \mathrlap{\sfdeo}{/} } }
+\newcommand{ \fsDisCPVoo }[ 1 ]{ \fsDis_{ \rmY, #1 } }
+\newcommand{ \fsDisCPVooR }[ 1 ]{ \fsDis_{ \mathrlap{/}{\rmY}, #1 } }
+% \newcommand{ \fsDisVoo }{ \fsDis_{ \sfdeo } }
+% \newcommand{ \fsDisVooR }{ \fsDis_{ \mathrlap{\sfdeo}{/} } }
+% \newcommand{ \fsDisCPVoo }[ 1 ]{ \fsDis_{ \rmY_{#1} } }
+% \newcommand{ \fsDisCPVooR }[ 1 ]{ \fsDis_{ \mathrlap{\rmY}{/}_{#1} } }
+% \newcommand{ \fsDisVoo }{ \fsDis\hspace{-1pt}{}_{ \sfdeo } }
+% \newcommand{ \fsDisVooR }{ \fsDis\hspace{-1pt}{}_{ \mathrlap{\sfdeo}{/} } }
+% \newcommand{ \fsDisCPVoo }[ 1 ]{ \fsDis\hspace{-1pt}{}_{ \rmY_{#1} } }
+% \newcommand{ \fsDisCPVooR }[ 1 ]{ \fsDis\hspace{-1pt}{}_{ \mathrlap{\rmY}{/}_{#1} } }
+% \newcommand{ \fsDisVoo }{ \fsDis\hspace{1pt}{}^{ \sfdeo }_{ 0+ } }
+% \newcommand{ \fsDisVooR }{ \fsDis\hspace{1pt}{}^{ \mathrlap{\sfdeo}{/} }_{ 0+ } }
+% \newcommand{ \fsDisCPVoo }[ 1 ]{ \fsDis\hspace{1pt}{}^{ \rmY_{#1} }_{ 0+ } }
+% \newcommand{ \fsDisCPVooR }[ 1 ]{ \fsDis\hspace{1pt}{}^{ \mathrlap{\rmY}{/}_{#1} }_{ 0+ } }
+% \newcommand{ \fsDisVoo }{ \fsDis\hspace{1pt}{}^{ \sfdeo }_{ 0+ } }
+% \newcommand{ \fsDisVooR }{ \fsDis\hspace{1pt}{}^{ \mathrlap{\sfdeo}{/} }_{ 0+ } }
+% \newcommand{ \fsDisCPVoo }[ 1 ]{ \fsDis\hspace{1pt}{}^{ \sfdeo, #1 }_{ 0+ } }
+% \newcommand{ \fsDisCPVooR }[ 1 ]{ \fsDis\hspace{1pt}{}^{ \mathrlap{\sfdeo}{/}, #1 }_{ 0+ } }
+% \newcommand{ \fsDisVoo }{ \fsTest^{ \prime, 0 }_{ 0+ } }
+% \newcommand{ \fsDisVooR }{ \fsTest^{ \prime, 0, \mathrlap{\sfdeo}{/} }_{ 0+ } }
+% \newcommand{ \fsDisCPVoo }[ 1 ]{ \fsTest^{ \prime, #1 }_{ 0+ } }
+% \newcommand{ \fsDisCPVooR }[ 1 ]{ \fsTest^{ \prime, #1, \mathrlap{\sfdeo}{/} }_{ 0+ } }
+% \newcommand{ \fsDisVoo }{ \fsDis_{0+,0} }
+% \newcommand{ \fsDisVooR }{ \fsDis_{ 0+, 0, \mathrlap{\sfdeo}{/} } }
+% \newcommand{ \fsDisCPVoo }[ 1 ]{ \fsDis_{ 0+, #1 } }
+% \newcommand{ \fsDisCPVooR }[ 1 ]{ \fsDis_{ 0+, #1, \mathrlap{\sfdeo}{/} } }
+% \newcommand{ \fsDisVoo }{ \fsDis_{\rmr\rms,0} }
+% \newcommand{ \fsDisVooR }{ \fsDis_{ \rmr\rms, 0, \mathrlap{\sfdeo}{/} } }
+% \newcommand{ \fsDisCPVoo }[ 1 ]{ \fsDis_{ \rmr\rms, #1 } }
+% \newcommand{ \fsDisCPVooR }[ 1 ]{ \fsDis_{ \rmr\rms, #1, \mathrlap{\sfdeo}{/} } }
+
+
+
+\newcommand{ \fdidRL }{ { \mathrm{ RL  } } }
+\newcommand{ \fdidLC }{ { \mathrm{ LC  } } }
+\newcommand{ \fdidH  }{ { \mathrm{ H   } } }
+
+\newcommand{ \fdidCF  }{ { \mathrm{ CF  } } }
+\newcommand{ \fdidABC }{ { \mathrm{ ABC } } }
+
+\newcommand{ \fdidnL }[ 1 ]{ { #1\rmL } }
+
+
+
+\newcommand{ \opCPO  }[ 1 ]{ \operatorname{O}\left( #1 \right) }
+\newcommand{ \opCPON }[ 2 ]{ \operatorname{O}_{#2}\left( #1 \right) }
+
+%\newcommand{ \opDrvRL }[ 1 ]{ \mathop{ {}_\fdidRL \hspace{-2pt}\operatorname{D}^{#1}_{0+} } }
+\newcommand{ \opDrvLC }[ 1 ]{ \mathop{ {}_\fdidLC \hspace{-2pt}\operatorname{D}^{#1}_{0+} } }
+\newcommand{ \opDrvH  }[ 1 ]{ \mathop{ {}_\fdidH  \hspace{-2pt}\operatorname{D}^{#1}_{0+} } }
+\newcommand{ \opDrvS   }[ 2 ]{ \operatorname{D}^{ #1 | #2 }_{0+} }
+\newcommand{ \opDrvCF  }[ 1 ]{ \mathop{ {}_\fdidCF  \hspace{-2pt}\operatorname{D}^{#1}_{0+} } }
+\newcommand{ \opDrvABC }[ 1 ]{ \mathop{ {}_\fdidABC \hspace{-2pt}\operatorname{D}^{#1}_{0+} } }
+
+\newcommand{ \opDrvnL }[ 3 ]{ \mathop{ {}_\fdidnL{ #3 } \hspace{-2pt}\operatorname{D}^{ #1 , ( #2 )}_{0+} } }
+
+
+
+\newcommand{ \opIntCF  }[ 1 ]{ \mathop{ {}_\fdidCF  \hspace{-2pt}\operatorname{J}^{#1}_{0+} } }
+\newcommand{ \opIntABC }[ 1 ]{ \mathop{ {}_\fdidABC \hspace{-2pt}\operatorname{J}^{#1}_{0+} } }
+
+
+%\newcommand{ \opIntRL }[ 1 ]{ \mathop{ {}_\fdidRL  \hspace{-2pt} }\operatorname{I}^{#1}_{0+} }
+
+
+
+%\newcommand{ \opDrv }{ \operatorname{D} }
+
+
+\newcommand{ \opDrvVoo }[ 1 ]{ \mathop{ {}_{\mathrm{V} }\hspace{-2pt} \operatorname{D}^{ #1 }_{0+} } }

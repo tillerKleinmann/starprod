@@ -1,0 +1,15 @@
+*.gitignore~
+*.tex~
+*.synctex.gz
+*.synctex\(busy\)
+*.fdb_latexmk
+*.aux
+*.log
+*.pdf
+*.toc
+*.fls
+*.bbl
+*.bcf
+*.blg
+*.out
+*.run.xml

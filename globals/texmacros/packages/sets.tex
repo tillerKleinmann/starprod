@@ -1,0 +1,127 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Schriftart für Mengensysteme %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\newcommand{ \ssfont}[1]{\mathfrak{#1}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Mengentheoretische Relationen und Operationen %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{ \empset }{ \emptyset }                                % Leere Menge
+\newcommand{ \ssPow }{ \operatorname{\sssfont{P}} }                % Potenzmenge
+\newcommand{ \ssPowPow }{ \operatorname{\sssfont{P}^2} }           % Potenzmenge der Potenzmenge
+\newcommand{ \ssFin }{ \operatorname{\sssfont{F}} }                % endliche Teilmengen
+
+
+\newcommand{ \ssFil }{ \operatorname{ \sssfont{ PF } } }
+\newcommand{ \ssCof }{ \operatorname{ \sssfont{ PB } } }
+
+
+
+\newcommand{ \opopSSF }[ 2 ]{ #1\left( #2 \right) }
+
+\newcommand{ \ssPowof }[ 1 ]{ \opopSSF{ \ssPow }{ #1 } }
+\newcommand{ \ssPowPowof }[ 1 ]{ \opopSSF{ \ssPowPow }{ #1 } }
+\newcommand{ \ssFinof }[ 1 ]{ \opopSSF{ \ssFin }{ #1 } }
+
+
+\newcommand{ \subs }{ \subseteq }                                  % Mengeninklusion
+\newcommand{ \ssubs }{ \subset }                                   % -"- strikt
+\newcommand{ \sssubs }{ \subsetneq }                               % -"- strikt (betont)
+\newcommand{ \nsubs }{ \nsubseteq }                                % -"- negation
+
+
+\newcommand{ \sups }{ \supseteq }                                  % umgekehrte Mengeninklusionen
+\newcommand{ \ssups }{ \supset }                                   % -"- strikt
+\newcommand{ \sssups }{ \supsetneq }                               % -"- strikt (betont)
+\newcommand{ \nsups }{ \nsubseteq}                                 % -"- negation
+
+
+\newcommand{ \setm }{ \setminus }                                  % Mengendifferenz
+
+
+\newcommand{ \opMap }{ \operatorname{map} }
+
+\newcommand{ \brmDelim }{ : }
+\newcommand{ \BrmDelim }{ : }
+%\newcommand{ \brmDelim }{ ~|~ }
+%\newcommand{ \BrmDelim }{ ~\middle|~ }
+
+\newcommand{ \brSet }[ 1 ]{ \{ #1 \} }
+\newcommand{ \BrSet }[ 1 ]{ \left\{ #1 \right\} }
+
+\newcommand{ \brmSet }[ 2 ]{ \brSet{ #1 \brmDelim #2 } }
+\newcommand{ \BrmSet }[ 2 ]{ \BrSet{ #1 \BrmDelim #2 } }
+
+\newcommand{ \brClo }[ 1 ]{ \langle #1 \rangle }
+\newcommand{ \BrClo }[ 1 ]{ \left\langle #1 \right\rangle }
+
+\newcommand{ \eqClo }[ 1 ]{ \overset{ #1 }{ \asymp } }
+
+\newcommand{ \brmClo }[ 2 ]{ \brClo{ #1 \brmDelim #2 } }
+\newcommand{ \BrmClo }[ 2 ]{ \BrClo{ #1 \BrmDelim #2 } }
+
+\newcommand{ \brCClo }[ 2 ]{ \lvert\lceil #1 \rceil\rvert_{ #2 } }
+\newcommand{ \BrCClo }[ 2 ]{ \left\lvert\left\lceil #1 \right\rceil\right\rvert_{ #2 } }
+
+\newcommand{ \brKer }[ 1 ]{ ( #1 ) }
+\newcommand{ \BrKer }[ 1 ]{ \left( #1 \right) }
+
+\newcommand{ \brPol }[ 3 ]{ \langle\, #1 \,\rangle^{ #2 }_{ \mathtt{ #3 } } }
+\newcommand{ \BrPol }[ 3 ]{ \left\langle\, #1  \,\right\rangle^{ #2 }_{ \mathtt{ #3 } } }
+
+\newcommand{ \brAso }[ 1 ]{ (\, #1 \,) }
+\newcommand{ \BrAso }[ 1 ]{ \left(\, #1 \,\right) }
+
+\newcommand{ \brArg }[ 1 ]{ (\, #1 \,) }
+\newcommand{ \BrArg }[ 1 ]{ {\left(\, #1 \,\right)} }
+\newcommand{ \BrArgg }[ 2 ]{ {\left(\, #1 \,,\, #2 \,\right)} }
+\newcommand{ \BrArggg }[ 3 ]{ {\left( #1 \,,\, #2 \,,\, #3 \right)} }
+
+
+\newcommand{ \opTUni }{ \mathop{ { \textstyle\bigcup } } }
+
+
+%\newcommand{ \indfam }[ 2 ]{ #1{:}#2 }
+%\newcommand{ \indfam }[ 2 ]{ ( #1 : #2 ) }
+%\newcommand{ \indfam }[ 2 ]{ #1 : #2 }
+\newcommand{ \indfam }[ 2 ]{ #1_{\,:\,#2} }
+
+
+\newcommand{ \brMap }[ 1 ]{ ( #1 ) }
+\newcommand{ \BrMap }[ 1 ]{ \left( #1 \right) }
+\newcommand{ \brmMap }[ 2 ]{ \brMap{ #1 \brmDelim #2 } }
+\newcommand{ \BrmMap }[ 2 ]{ \BrMap{ #1 \BrmDelim #2 } }
+
+
+\newcommand{ \idBor }{ \mathtt{Bor} }
+\newcommand{ \idFil }{ \mathtt{Fil} }
+
+\newcommand{ \clBor }[ 1 ]{ \brClo{ #1 }{ \idBor } }
+\newcommand{ \clFil }[ 1 ]{ \brClo{ #1 }{ \idFil } }
+
+\newcommand{ \ClmLSS }[ 2 ]{ \left\langle #1 \,\middle|\, #2 \right\rangle_{\mathfrak{PL}} }
+\newcommand{ \ClmUSS }[ 2 ]{ \left\langle #1 \,\middle|\, #2 \right\rangle_{\mathfrak{PU}} }
+
+
+\newcommand{ \idLS }{ {\mathtt{low}} }
+
+\newcommand{ \clLS }[ 1 ]{ \brClo{ #1 }_\idLS }
+\newcommand{ \ClLS }[ 1 ]{ \BrClo{ #1 }_\idLS }
+\newcommand{ \clmLS }[ 2 ]{ \brmClo{ #1 }{ #2 }_\idLS }
+\newcommand{ \ClmLS }[ 2 ]{ \BrmClo{ #1 }{ #2 }_\idLS }
+
+\newcommand{ \eqLS }{ \eqClo{ \idLS } }
+
+
+\newcommand{ \idUS }{ {\mathtt{upp}} }
+
+\newcommand{ \clUS }[ 1 ]{ \brClo{ #1 }_\idUS }
+\newcommand{ \ClUS }[ 1 ]{ \BrClo{ #1 }_\idUS }
+\newcommand{ \clmUS }[ 2 ]{ \brmClo{ #1 }{ #2 }_\idUS }
+\newcommand{ \ClmUS }[ 2 ]{ \BrmClo{ #1 }{ #2 }_\idUS }
+
+\newcommand{ \eqUS }{ \eqClo{ \idUS } }

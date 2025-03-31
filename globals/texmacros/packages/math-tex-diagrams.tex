@@ -1,0 +1,30 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% arrows for diagrams in the category of locally convex spaces %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{ \dgObj }[ 3 ]{ \path (#2) node (#1) {#3}; }
+
+\newcommand{ \dgMor }[ 2 ]{ \draw[ ->,    thick ]  (#1) -- (#2); }                 %  continuous, linear mapping
+\newcommand{ \dgMon }[ 2 ]{ \draw[ {>->}, thick ]  (#1) -- (#2); }                 %  monomorphism
+
+\newcommand{ \dgMonOpen }[ 2 ]{ \draw[ {o->},              thick ]  (#1) -- (#2); }  % + offen
+\newcommand{ \lcmd  }[ 2 ]{ \draw[ {-hooks reversed},  thick ]  (#1) -- (#2); }% + dichtes Bild
+\newcommand{ \lcmc  }[ 2 ]{ \draw[ {-)},               thick ]  (#1) -- (#2); }% + abgeschlossenes Bild
+\newcommand{ \dgEmb }[ 2 ]{ \draw[ {right hook->},     thick ]  (#1) -- (#2); }% + Einbettung
+\newcommand{ \lcms  }[ 2 ]{ \draw[ {->>},              thick ]  (#1) -- (#2); }% + surjektiv
+\newcommand{ \lcmid }[ 2 ]{ \draw[ {>-hooks reversed}, thick ]  (#1) -- (#2); }% + injektiv, dichtes Bild
+\newcommand{ \dgMonClo }[ 2 ]{ \draw[ {>-)},              thick ]  (#1) -- (#2); }% + injektiv, abgeschlossenes Bild
+\newcommand{ \lcmod }[ 2 ]{ \draw[ {o-hooks reversed}, thick ]  (#1) -- (#2); }% + offen, dichtes Bild
+\newcommand{ \lcmoc }[ 2 ]{ \draw[ {o-)},              thick ]  (#1) -- (#2); }% + offen, abgschlossenes Bild
+\newcommand{ \dgEmbDen }[ 2 ]{ \draw[ {right hook-hooks reversed}, thick ]  (#1) -- (#2); }% + Einbettung, dichtes Bild
+\newcommand{ \dgEmbClo }[ 2 ]{ \draw[ {right hook-]},              thick ]  (#1) -- (#2); }% + Einbettung, abgeschlossenes Bild
+\newcommand{ \dgBij }[ 2 ]{ \draw[ {>->>},                      thick ]  (#1) -- (#2); }% + injektiv, surjektiv
+\newcommand{ \lcmos }[ 2 ]{ \draw[ {o->>}, thick ]  (#1) -- (#2); }% + offen, surjektiv
+\newcommand{ \lcmes }[ 2 ]{ \draw[ {right hook->>}, thick ]  (#1) -- (#2); }% + Einbettung, surjektiv
+\newcommand{ \lcmfa }[ 2 ]{ \draw[ ->, thick, dashed ]  (#1) -- (#2); }% Für alle
+\newcommand{ \lcmex }[ 2 ]{ \draw[ ->, thick, dotted ]  (#1) -- (#2); }% Existiert
+\newcommand{ \lcmexa }[ 3 ]{ \draw[ {-]} ]  (#1) .. controls (#2) .. (#3); }% Hilfslinie für Exaktheit
+\newcommand{ \lcmanu }[ 3 ]{ \draw[ {-)} ]  (#1) .. controls (#2) .. (#3); }% Hilfslinie für Exaktheit
+
+\newcommand{ \phnode }[ 2 ]{ \path (#2) node(#1) {}; }
+
+\newcommand{ \lcmisclr }[ 3 ]{ \draw[ {>->>}, thick, #3 ]  (#1) -- (#2); }% + injektiv, surjektiv, farbig

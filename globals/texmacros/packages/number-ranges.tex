@@ -1,0 +1,81 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Schriftart für Zahlenbereiche %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{ \fontNR }[ 1 ]{ \mathbb{ #1 } }
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% klassische Zahlenbereiche %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{ \nrN }{ \fontNR{N} }
+\newcommand{ \nrZ }{ \fontNR{Z} }
+\newcommand{ \nrQ }{ \fontNR{Q} }
+\newcommand{ \nrR }{ \fontNR{R} }
+\newcommand{ \nrC }{ \fontNR{C} }
+
+\newcommand{ \nrNn }{ \nrN_0 }
+\newcommand{ \nrRp }{ \nrR_+ }
+\newcommand{ \nrRpn }{ \nrR_{0+} }
+
+\newcommand{ \nrZi }{ \nrZ^\times }
+\newcommand{ \nrQi }{ \nrQ^\times }
+\newcommand{ \nrRi }{ \nrR^\times }
+\newcommand{ \nrCi }{ \nrC^\times }
+
+
+\newcommand{ \nrRpi }{ \nrR_* }
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% erweiterte Zahlenbereiche %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{ \nrRe  }{ \overline{ \fontNR{R} } }
+\newcommand{ \nrRep }{ \nrRe_+ }
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Spezielle komplexe Zahlenbereiche %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{ \nrD }{ \fontNR{D} }    % abgeschlossene Einheitskreisscheibe
+\newcommand{ \nrT }{ \fontNR{T} }    % komplexe Einheiten ( absolutbetrag = 1 )
+\newcommand{ \nrL }{ \fontNR{L} }    % Riemannschei Fläche des Logarithmus
+\newcommand{ \nrH }{ \fontNR{H} }    % rechte offene Halbebene
+
+
+
+\newcommand{ \imu }{ \mathrm{i} }
+\newcommand{ \enr }{ \mathrm{e} }
+
+
+%%%%%%%%%%%%%%%%%%%%
+% Spezielle Zahlen %
+%%%%%%%%%%%%%%%%%%%%
+\newcommand{ \infi }{ \infty }
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+% Binäre Operationen %
+%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{ \mult }{ \cdot }
+
+
+%%%%%%%%%%%%%%%%%%%%%
+% Unäre Operationen %
+%%%%%%%%%%%%%%%%%%%%%
+\newcommand{ \ceil }[ 1 ]{ \lceil #1 \rceil }
+\newcommand{ \floor }[ 1 ]{ \lfloor #1 \rfloor }
+\newcommand{ \abs }[ 1 ]{ \lvert #1 \rvert }
+\newcommand{ \absv }{ { \abs{ \cdot } } }
+
+\newcommand{ \Abs }[ 1 ]{ \left\lvert #1 \right\rvert }
+
+
+
+\newcommand{ \itv }[ 2 ]{ \interval{#1}{#2} }
+\newcommand{ \ritv }[ 2 ]{ \rinterval{#1}{#2} }
+\newcommand{ \litv }[ 2 ]{ \linterval{#1}{#2} }
+\newcommand{ \oitv }[ 2 ]{ \ointerval{#1}{#2} }

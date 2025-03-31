@@ -1,0 +1,89 @@
+\newcommand{ \fsoConvX }[ 1 ]{ \fsConv( \fsX', #1 ) }
+
+\newcommand{ \fsDisSri }[ 1 ]{ \left( #1 \right)^{ \absv } }
+
+\newcommand{ \fsoDisConv }[ 1 ]{ \fsDis_{ \conv #1 } }
+
+\newcommand{ \fsoDisReg }{ \fsDis_{\conv\fsTest} }
+\newcommand{ \fsoDisDif }{ \fsDis_{\conv\sfsDeDiffs} }
+%\newcommand{ \fsoSmoDif }{ \fsSmo_{\conv\sfsDeDiffs} }
+\newcommand{ \fsoSmoDif }{ \fsSmo_{\partial^\bullet} }
+
+\newcommand{ \fsoDisX }{ \fsDis_{\conv\fsX'} }
+
+\newcommand{ \fsoDisSRI }{ \fsDis_\idSRI }
+\newcommand{ \fsoDisSTI }{ \fsDis_\idSTI }
+
+\newcommand{ \fsoSmoSRI }{ \fsSmo_\idSRI }
+\newcommand{ \fsoSmoSTI }{ \fsSmo_\idSTI }
+
+\newcommand{ \fsoMsrSRI }{ \fsMsr_\idSRI }
+\newcommand{ \fsoMsrSTI }{ \fsMsr_\idSTI }
+
+\newcommand{ \fsoLebSRI }[ 1 ]{ \fsLeb{ #1 }_\idSRI }
+\newcommand{ \fsoLebSTI }[ 1 ]{ \fsLeb{ #1 }_\idSTI }
+
+\newcommand{ \fsoSeqReg }{ \fsSeq_{\conv\fsTest} }
+
+
+\newcommand{ \fsoLSRI }{ \fsL_\idSRI }
+\newcommand{ \fsoLSTI }{ \fsL_\idSTI }
+
+\newcommand{ \fsoXSRI }{ \fsX_\idSRI }
+\newcommand{ \fsoXSTI }{ \fsX_\idSTI }
+
+\newcommand{ \fsoYSRI }{ \fsY_\idSRI }
+\newcommand{ \fsoYSTI }{ \fsY_\idSTI }
+
+
+
+\newcommand{ \opRestr }[ 2 ]{ #1 \rvert_{ #2 } }
+\newcommand{ \OpRestr }[ 2 ]{ \left. #1 \right\rvert_{ #2 } }
+
+\newcommand{ \OpDeInd }[ 2 ]{ \sfdeo_{#2}( #1 ) }
+
+\newcommand{ \OpDeIndZ }[ 1 ]{ \OpDeInd{ #1 }{ \nrZ^d } }
+\newcommand{ \OpDeIndZv }{ \OpDeIndZ{ \cdot } }
+\newcommand{ \OpDeIndZav }{ \OpDeIndZ{ \absv } }
+
+\newcommand{ \OpInInd }[ 2 ]{ \sfInd{#2}( #1 ) }
+
+\newcommand{ \OpInd }[ 2 ]{ \left. #1 \right\rvert^{ #2 }_0 }
+
+
+
+\newcommand{ \OpDisint }{ \mathop{\fsDis\text{-}\hspace{-4pt}\int} }
+
+
+\newcommand{ \fsXcs }{ \fsX_\idCptSupp }
+\newcommand{ \fsXld }{ \fsX'_{\mathrm{loc}} }
+
+
+\newcommand{ \opDrv }[ 1 ]{ \operatorname{D}^{ #1 } }
+
+
+%\newcommand{ \partials }{ \partial^{\nrN^d_0} }
+\newcommand{ \partials }{ \partial^{\nrN_0} }
+%\newcommand{ \sfsDeDiffs }{ \sfdeo^* }
+\newcommand{ \sfsDeDiffs }{ \partial^*\sfdeo }
+
+
+\newcommand{ \snfConv }[ 2 ]{ \abs{ #1 }_{ \conv #2 } }
+\newcommand{ \snfConvv }[ 1 ]{ \abs{ \cdot }_{ \conv #1 } }
+
+\newcommand{ \SnfConv }[ 2 ]{ \Abs{ #1 }_{ \conv #2 } }
+
+\newcommand{ \snfConvZ  }[ 2 ]{ \hspace{-1pt}\OpResZ{\snfConv{#1}{#2}} }
+\newcommand{ \snfConvZv }[ 1 ]{ \hspace{-1pt}\OpResZ{\snfConvv{#1}} }
+
+\newcommand{ \SnfConvZ }[ 2 ]{ \hspace{-1pt}\OpResZ{\SnfConv{#1}{#2}} }
+
+
+\newcommand{ \fssSmobnd }[ 2 ]{ \mathrm{ B }( #1 \,;\, #2 ) }
+
+
+%%%%%%%%%%%%%%%%%%%%%
+% Raummodifikatoren %
+%%%%%%%%%%%%%%%%%%%%%
+\newcommand{ \fsCSupp }[ 1 ]{ #1_{ \idCptSupp } }
+\newcommand{ \fsVan }[ 1 ]{ #1_0 }

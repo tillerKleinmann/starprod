@@ -1,0 +1,154 @@
+\newcommand{ \idACC }{ {\overline{\mathtt{acx}}} }
+
+% \newcommand{ \clACC }[ 1 ]{ \brClo{ #1 }_\idACC }
+% \newcommand{ \ClACC }[ 1 ]{ \BrClo{ #1 }_\idACC }
+% \newcommand{ \clmACC }[ 2 ]{ \brmClo{ #1 }{ #2 }_\idACC }
+% \newcommand{ \ClmACC }[ 2 ]{ \BrmClo{ #1 }{ #2 }_\idACC }
+\newcommand{ \clACC }[ 1 ]{ \overline{\tGa( #1 )} }
+\newcommand{ \ClACC }[ 1 ]{ \overline{\tGa\left( #1 \right)} }
+\newcommand{ \clmACC }[ 2 ]{ \overline{\tGa( \brmSet{ #1 }{ #2 } )} }
+\newcommand{ \ClmACC }[ 2 ]{ \overline{\tGa\left( \BrmSet{ #1 }{ #2 } \right)} }
+\newcommand{ \clACT }[ 2 ]{ \overline{\tGa( #1 )}^{ #2 } }
+\newcommand{ \ClACT }[ 2 ]{ \overline{\tGa( #1 )}^{ #2 } }
+\newcommand{ \clmACT }[ 3 ]{ \overline{\tGa( \brmSet{ #1 }{ #2 } )}^{ #3 } }
+\newcommand{ \ClmACT }[ 3 ]{ \overline{\tGa\left( \BrmSet{ #1 }{ #2 } \right)}^{ #3 } }
+
+
+%\newcommand{ \norm }[ 1 ]{ \left\lVert #1 \right\rVert }
+\newcommand{ \norm }[ 1 ]{ \lVert #1 \rVert }
+\newcommand{ \normv }{ \norm{ \cdot } }
+\newcommand{ \bignorm }[ 1 ]{ \big\lVert #1 \big\rVert }
+\newcommand{ \Norm }[ 1 ]{ \left\lVert #1 \right\rVert }
+
+\newcommand{ \fsoSpan }{ \operatorname{span} }
+
+
+\newcommand{ \fsCLO }{ \fsfont{ L } }
+\newcommand{ \fsCLOs }{ \fsfont{ L }_{ \mathrm{ s } } }
+\newcommand{ \fsCLOc }{ \fsfont{ L }_{ \mathrm{ c } } }
+\newcommand{ \fsCLOb }{ \fsfont{ L }_{ \mathrm{ b } } }
+\newcommand{ \fsCLObor }[ 1 ]{ \fsfont{ L }_{ #1 } }
+
+\newcommand{ \OpRes }[ 2 ]{ \left. #1 \right\rvert_{ #2 } }
+%\newcommand{ \OpResZ }[ 1 ]{ \OpRes{ #1 }{ \nrZ^d } }
+\newcommand{ \OpResZ }[ 1 ]{ \OpRes{ #1 }{ \nrZ } }
+\newcommand{ \OpExt }[ 3 ]{ \left. #1 \right\rvert^{ #3 }_{ #2 } }
+\newcommand{ \OpExtZero }[ 2 ]{ \OpExt{ #1 }{ #2 }{ \text{zero} } }
+\newcommand{ \OpExtCoco }[ 2 ]{ \OpExt{ #1 }{ #2 }{ \text{c.c.} } }
+
+\newcommand{ \opRes }[ 2 ]{ #1 \rvert_{ #2 } }
+%\newcommand{ \opResZ }[ 1 ]{ \opRes{ #1 }{ \nrZ^d } }
+\newcommand{ \opResZ }[ 1 ]{ \opRes{ #1 }{ \nrZ } }
+
+
+%\newcommand{ \OpLCInvi }[ 1 ]{ { #1 }^{-1}_{\mathtt{lc}} }
+%\newcommand{ \OpLCInvi }[ 1 ]{ \mathop{\underleftarrow{#1}} }
+\newcommand{ \OpLCInvi }[ 1 ]{ \mathop{\underleftarrow{\hspace{2pt}#1\hspace{2pt}}} }
+
+
+
+\newcommand{ \fstWeak }[ 1 ]{ #1{}_{ \sigma } }
+
+
+
+\newcommand{ \fsoDom }{ \operatorname{ Dom } }
+\newcommand{ \fsoEndom }{ \operatorname{ Endom } }
+
+
+\newcommand{ \lpoSka }[ 3 ]{ ( #1 )^\triangleleft_{#2,#3}  }
+\newcommand{ \rpoSka }[ 3 ]{ ( #1 )^\triangleright_{#2,#3} }
+
+\newcommand{ \lpoCTop }[ 1 ]{ ( #1 )^\vartriangleleft_\ka  }
+\newcommand{ \rpoCTop }[ 1 ]{ ( #1 )^\vartriangleright_\ka }
+
+\newcommand{ \lpoPCTop }[ 1 ]{ ( #1 )^\vartriangleleft_\ta  }
+\newcommand{ \rpoPCTop }[ 1 ]{ ( #1 )^\vartriangleright_\ta }
+
+
+\newcommand{ \poAlId }{ \bullet }
+
+\newcommand{ \poAl }[ 1 ]{ { #1 }^\poAlId }
+\newcommand{ \PoAl }[ 1 ]{ \left( #1 \right)^\poAlId }
+\newcommand{ \bpoAl }[ 1 ]{ { #1 }^{ \poAlId\poAlId } }
+\newcommand{ \BpoAl }[ 1 ]{ \left( #1 \right)^{ \poAlId\poAlId } }
+
+
+\newcommand{ \poALId }{ \times }
+
+\newcommand{ \poAL }[ 1 ]{ { #1 }^\poALId }
+\newcommand{ \PoAL }[ 1 ]{ \left( #1 \right)^\poALId }
+\newcommand{ \bpoAL }[ 1 ]{ { #1 }^{\poALId\poALId} }
+\newcommand{ \BpoAL }[ 1 ]{ \left( #1 \right)^{\poALId\poAlId} }
+
+
+\newcommand{ \poAId }{ \circ }
+
+\newcommand{ \poA }[ 1 ]{ { #1 }^\poAId }
+\newcommand{ \PoA }[ 1 ]{ \left( #1 \right)^\poAId }
+\newcommand{ \bpoA }[ 1 ]{ { #1 }^{ \poAId\poAId } }
+\newcommand{ \BpoA }[ 1 ]{ \left( #1 \right)^{ \poAId\poAId } }
+
+
+\newcommand{ \poBId }{ \bullet }
+
+\newcommand{ \poB }[ 1 ]{ { #1 }^\poBId }
+\newcommand{ \PoB }[ 1 ]{ \left( #1 \right)^\poBId }
+\newcommand{ \bpoB }[ 1 ]{ { #1 }^{ \poBId\poBId } }
+\newcommand{ \BpoB }[ 1 ]{ \left( #1 \right)^{ \poBId\poBId } }
+
+
+\newcommand{ \poAAId }{ \circledcirc }
+
+\newcommand{ \poAA }[ 1 ]{ { #1 }^\poAAId }
+\newcommand{ \PoAA }[ 1 ]{ \left( #1 \right)^\poAAId }
+\newcommand{ \bpoAA }[ 1 ]{ { #1 }^{ \poAAId\poAAId } }
+\newcommand{ \BpoAA }[ 1 ]{ \left( #1 \right)^{ \poAAId\poAAId } }
+
+
+\newcommand{ \lpoLPId }{ \triangleleft  }
+\newcommand{ \rpoLPId }{ \triangleright }
+
+\newcommand{ \lpoLP }[ 1 ]{ { #1 }^\lpoLPId }
+\newcommand{ \rpoLP }[ 1 ]{ { #1 }^\rpoLPId }
+\newcommand{ \LpoLP }[ 1 ]{ \left( #1 \right)^\lpoLPId }
+\newcommand{ \RpoLP }[ 1 ]{ \left( #1 \right)^\rpoLPId }
+
+\newcommand{ \LBpoLP }[ 1 ]{ \LpoLP{ \RpoLP{ #1 } } }
+\newcommand{ \RBpoLP }[ 1 ]{ \RpoLP{ \LpoLP{ #1 } } }
+
+
+\newcommand{ \lpoSeqvId }{ \blacktriangleleft  }
+\newcommand{ \rpoSeqvId }{ \blacktriangleright }
+
+\newcommand{ \lpoSeqv }[ 1 ]{ { #1 }^\lpoSeqvId }
+\newcommand{ \rpoSeqv }[ 1 ]{ { #1 }^\rpoSeqvId }
+\newcommand{ \LpoSeqv }[ 1 ]{ \left( #1 \right)^\lpoSeqvId }
+\newcommand{ \RpoSeqv }[ 1 ]{ \left( #1 \right)^\rpoSeqvId }
+
+\newcommand{ \LBpoSeqv }[ 1 ]{ \left( #1 \right)^{ \rpoSeqvId \lpoSeqvId } }
+\newcommand{ \RBpoSeqv }[ 1 ]{ \left( #1 \right)^{ \lpoSeqvId \rpoSeqvId } }
+
+
+\newcommand{ \poSeqvId }{ \odot  }
+
+\newcommand{ \poSeqv }[ 1 ]{ { #1 }^\poSeqvId }
+\newcommand{ \PoSeqv }[ 1 ]{ \left( #1 \right)^\poSeqvId }
+
+\newcommand{ \bpoSeqv }[ 1 ]{ { #1 }^{ \poSeqvId \poSeqvId } }
+\newcommand{ \BpoSeqv }[ 1 ]{ \left( #1 \right)^{ \poSeqvId \poSeqvId } }
+
+
+\newcommand{ \clCompl }[ 1 ]{ \widehat{#1} }
+
+
+\newcommand{ \tepro  }{ \otimes }
+\newcommand{ \ctepro }{ \mathbin{\clCompl{\otimes}} }
+
+
+
+\newcommand{ \catSRI }{ \mathtt{SRI} }
+\newcommand{ \catSTI }{ \mathtt{sti} }
+
+
+
+\newcommand{ \ssTig }{ \operatorname{\sssfont{T}} }    % straffe Teilmengen

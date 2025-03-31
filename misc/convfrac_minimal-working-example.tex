@@ -1,0 +1,50 @@
+\documentclass{scrartcl}
+
+% basic math packages
+%\usepackage{amsmath,amssymb,amsfonts,amsthm}
+
+\usepackage{mathtools}
+
+\newcommand{ \convfrac }[ 2 ]{
+    { \hspace{2pt}{\mathrlap{*}\hspace{-2pt}
+        \frac{ \hphantom{*} #1 }{ \hphantom{*} #2 } }
+    }
+}
+
+\begin{document}
+
+    \begin{align}
+        \nu Y_\gamma
+        *
+        \convfrac{ \delta + \lambda Y_\alpha }{ \delta - \mu Y_\beta }
+        &=
+        \nu
+        \operatorname{I}^\gamma_+
+        \left(
+        \convfrac{ \delta + \lambda Y_\alpha }{ \delta - \mu Y_\beta }
+        \right)
+        =
+        \operatorname{I}^\gamma_+
+        \left(
+        \nu
+        \convfrac{ \delta + \lambda Y_\alpha }{ \delta - \mu Y_\beta }
+        \right)
+        \\
+        \nu Y_\gamma
+        *
+        \frac{ \delta + \lambda Y_\alpha }{ \delta - \mu Y_\beta }
+        &=
+        \nu
+        \operatorname{I}^\gamma_+
+        \left(
+        \frac{ \delta + \lambda Y_\alpha }{ \delta - \mu Y_\beta }
+        \right)
+        =
+        \operatorname{I}^\gamma_+
+        \left(
+        \nu
+        \frac{ \delta + \lambda Y_\alpha }{ \delta - \mu Y_\beta }
+        \right)
+    \end{align}
+
+\end{document}
