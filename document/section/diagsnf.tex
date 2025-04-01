@@ -1,0 +1,49 @@
+\section{Diagonal Supnorm Functionals}
+\label{dsnf}
+
+
+Let $ T $ be a distribution on $ \nrR^n $.
+The convolution seminorm function of $ T $
+with index $ \Ph $ is defined by \cite{KH022a,KH023,kle024}
+\begin{align}
+    \snfConv{T}{\Ph}( x )
+    &:=
+    \sup_{\ph\in\Ph}\abs{ ( T * \ph )( x ) }
+    &&\text{for all $ x \in \nrR^n $.}
+\end{align}
+The {\em diagonal cover} of a function $ f \colon \nrR^{2n} \to \nrR $
+is defined by
+\begin{align}
+    \absDi{ f( x, y ) }
+    :=
+    \sup_{z\in\nrR^n}\abs{ f( x + z, y + z ) }
+    &&&\text{for all $ x, y \in \nrR^n $.}
+\end{align}
+
+Let $ \rmR_{\th} \colon \nrR^{2n} \to \nrR^{2n} $ be the rotation
+\begin{align}
+    \rmR_{\th}( x, y )
+    &=
+    ( x\cos\th + y\sin\th, y\cos\th - x\sin\th )
+    &&\text{for all $ x,y \in \nrR^n $, $ \th \in \nrR $.}
+\end{align}
+The diagonal-codiagonal tensor product $ T \teproDi S $
+of distributions $ T, S \in \fsDis(\nrR^n) $ is defined as
+\begin{align}
+    T \teproDi S
+    :=
+    \rmR_{\pi/2}( T \tepro S )
+    .
+\end{align}
+
+\begin{lemma}
+    Let $ T $ be a distribution from the space
+    $ \fsSmobnd(\nrR^n) \cteproDi \fsDis(\nrR^n) $.
+    Then
+    \begin{align}
+        \snfDiCo{T}{\Ph}
+        :=
+        \sup_{ \ph \in \Ph }\abs{ ( T * ( \sfdeo \teproDi \ph ) ) }^{\tDe}
+    \end{align}
+    is well defined for all $ \Ph \in \ssBnd(\fsTest(\nrR^n)) $.
+\end{lemma}

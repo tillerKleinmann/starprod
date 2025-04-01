@@ -1,0 +1,40 @@
+\section{Qualitative Triangle Inequalities and Well Definedness}
+\label{tri}
+
+
+\begin{definition}
+    Let $ T $ and $ S $ be distributions on $ \fsDis( \nrR^{2n} ) $ \cite{ryc025}.
+    The {\em star product} $ T \star S $ is defined by
+    \begin{align}
+        \ska{ ( T \star S )( x, y ) }{ \ph( x, y ) }
+        :=
+        \int \Ska{ T( x, z ) }{ \ska{ S( z, y ) }{ \ph( x, y ) }_y }_x \intd{ z }
+        &&&\text{for all $ \ph \in \fsTest( \nrR^{2n} ) $.}
+    \end{align}
+\end{definition}
+
+\begin{conjecture}
+    The star product $ T \star S $
+    of distributions $ T, S \in \fsSmobnd(\nrR^n) \cteproDi \fsDis(\nrR^n) $
+    is well defined if
+    \begin{subequations}
+        \begin{align}
+            \left( \snfDiCo{ T }{ \Ph } \star \snfDiCo{ S }{ \Ph } \right)( x, y )
+            <
+            \infi
+            &&&\text{for all $ x, y \in \nrR^n $
+            and $ \Ph \in \ssBnd(\fsTest(\nrR^n)) $.}
+            \label{eq:star:exists}
+        \end{align}
+        For all $ \Ph \in \ssBnd(\fsTest(\nrR^n)) $
+        there exists $ \Ps \in \ssBnd(\fsTest(\nrR^n)) $ such that
+        \begin{align}
+            \snfDiCo{ T \star S }{ \Ph }
+            &\leq
+            \snfDiCo{ T }{ \Ps } \star \snfDiCo{ S }{ \Ps }
+            &&\text{for all $ T, S \in \fsDis(\nrR^{2n}) $
+            that satisfy \eqref{eq:star:exists}.}
+            \label{eq:star:ineq}
+        \end{align}
+    \end{subequations}
+\end{conjecture}

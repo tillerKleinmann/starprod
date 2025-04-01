@@ -1,0 +1,27 @@
+\section{Introduction}
+\label{int}
+
+The {\em star product} $ \ph \star \ps $
+of test functions $ \ph $ and $ \ps $ on the euclidean plane
+\begin{align}
+    ( \ph \star \ps )(x,y)
+    &:=
+    \int \ph(x,z)\ps(z,y) \intd{z}
+    &&\text{for all $ x,y \in \nrR $,}
+\end{align}
+can be seen as a generalization of matrix multiplication \cite{RBG025}.
+For example, it can be used to describe the composition of the kernels
+of two continuous linear operators $ L_\ph $ and $ L_\ps $
+mapping from $ \fsDis( \nrR ) $ to $ \fsTest( \nrR ) $ via
+\begin{align}
+    L_\ph \colon T \Mto ( y \mto \ska{T}{\ph(\cdot,y)} ),
+\end{align}
+according to Schwarz' kernel theorem.
+
+For distributions $ T $ and $ S $ on $ \nrR^2 $
+it is more complicated to define $ T \star S $
+and to identify suitable existence criteria.
+In this note we transport the definition
+of convolution of distributions to the star product
+and show same applied example where it appears
+and compare it to the definition investigated recently \cite{RBG025}.

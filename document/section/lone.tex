@@ -1,0 +1,184 @@
+\section{A Discrete Amalgam Type $\star$-Algebra}
+\label{lone}
+
+Let $ \fsSeq( \nrZ^2 ) $ denote the space of functions $ \nrZ^2 \to \nrR $.
+
+\begin{definition}
+    Define the space
+    \begin{align}
+        A
+        &:=
+        \brmSet{ a \in \fsSeq( \nrZ^2 ) }{ \norm{ a }_{\infi,1,\tDe} < \infi }
+    \end{align}
+    with the norm
+    \begin{align}
+        \norm{ a }_{\infi,1,\tDe}
+        :=
+        \sum_{y\in\nrZ}\sup_{x\in\nrZ}\abs{a(x+y,x-y)}
+        .
+    \end{align}
+\end{definition}
+
+\begin{definition}
+    Let $ a, b \in \fsSeq( \nrZ^2 ) $.
+    Then
+    \begin{align}
+        ( a \star b )( x, y )
+        &:=
+        \sum_{z\in\nrZ} a( x, z ) b( z, y )
+        &&\text{for all $ x, y \in \nrZ $.}
+    \end{align}
+    The {\em diagonal cover} $ \abs{a}^\tDe $
+    of a sequence $ a \in \fsSeq( \nrZ^2 ) $ is defined as
+    \begin{align}
+        \abs{a}^\tDe( x, y )
+        :=
+        \sup_{z\in\nrZ}\abs{a(x+z,y+z)}
+        &&&\text{for all $ x, y \in \nrZ $.}
+    \end{align}
+\end{definition}
+
+\begin{lemma}
+    \label{lem:sd}
+    Let $ a, b \in \fsSeq( \nrZ^2 ) $.
+    If the {\em star product} $ a \star b $ exists, then
+    \begin{align}
+        \absDi{ a \star b }
+        \leq
+        \absDi{ a } \star \absDi{ b }
+        .
+        \label{lem:sd:eq}
+    \end{align}
+\end{lemma}
+
+\begin{proof}
+    If $ a \star b $ exists, then
+    \begin{align*}
+        \absDi{ a \star b }( x, y )
+        &=
+        \sup_{w\in\nrZ} \Abs{ \sum_{z\in\nrZ} a(x+w,z)b(z,y+w) }
+        \\
+        &\leq
+        \sup_{w\in\nrZ} \Abs{ \sum_{z\in\nrZ} a(x+w,z+w)b(z+w,y+w) }
+        \\
+        &\leq
+        \sum_{z\in\nrZ} \sup_{w\in\nrZ} \abs{ a(x+w,z+w)b(z+w,y+w) }
+        % \\
+        % &\leq
+        % \sup_{w,v\in\nrZ} \Abs{ \sum_{z\in\nrZ} a(x+w,z+w)b(z+v,y+v) }
+        \\
+        &\leq
+        \sum_{z\in\nrZ} \sup_{w,v\in\nrZ}\abs{ a(x+w,z+w) }\abs{ b(z+v,y+v) }
+        \\
+        &\leq
+        \sum_{z\in\nrZ} \sup_{w\in\nrZ}\abs{ a(x+w,z+w) }
+        \sup_{v\in\nrZ}\abs{ b(z+v,y+v) }
+        =
+        \left( \absDi{ a } \star \absDi{ b } \right)( x, y )
+    \end{align*}
+    for all $ x, y \in \nrZ $.
+\end{proof}
+
+Define the operators
+\begin{align}
+    \underline{b}( x )
+    &:=
+    b( x, 0 )
+    &&\text{for all $ x \in \nrZ $, $ b \in \fsSeq( \nrZ^2 ) $,}
+    \\
+    \overline{c}( x, y )
+    &:=
+    c( x - y )
+    &&\text{for all $ x, y \in \nrZ $, $ c \in \fsSeq( \nrZ ) $.}
+\end{align}
+
+\begin{lemma}
+    These operators satisfy
+    \begin{align}
+        \norm{ \underline{b} }_1
+        &=
+        \norm{ b }_{\infi,1,\tDe}
+        &&\text{for all $ b \in \overline{A} $,}
+        \\
+        \norm{ \overline{c} }_{\infi,1,\tDe}
+        &=
+        \norm{ c }_1
+        &&\text{for all $ c \in \fsSum{1}(\nrZ) $.}
+    \end{align}
+\end{lemma}
+
+\begin{lemma}
+    Star product and convolution are related by
+    \begin{align*}
+        \underline{ a \star b }
+        &=
+        \underline{ a } \conv \underline{ b }
+        &&\text{for all $ a, b \in \overline{A} $.}
+    \end{align*}
+\end{lemma}
+
+\begin{theorem}
+    The space $ A $ defines a $ \star $-Banach algebra,
+    that is $ A \star A \subs A $ and
+    \begin{align}
+        \norm{ a \star b }_{\infi,1,\tDe}
+        \leq
+        \norm{ a }_{\infi,1,\tDe} \cdot \norm{ b }_{\infi,1,\tDe}
+        &&&\text{for all $ a, b \in A $.}
+    \end{align}
+\end{theorem}
+
+\begin{proof}
+    Let $ a, b \in A $.
+    Then
+    \begin{align*}
+        \norm{ a \star b }_{\infi,1,\tDe}
+        =
+        \Norm{ \absDi{ a \star b } }_{\infi,1,\tDe}
+        \leq
+        \Norm{ \absDi{ a } \star \absDi{ b } }_{\infi,1,\tDe}
+        =
+        \Norm{ \underline{ \absDi{ a } \conv \absDi{ b } } }_1
+        =
+        \Norm{ \underline{ \absDi{ a } } \conv
+        \underline{ \absDi{ b } } }_1
+    \end{align*}
+    and further,
+    \begin{align*}
+        \Norm{ \underline{ \absDi{ a } } \conv
+        \underline{ \absDi{ b } } }_1
+        \leq
+        \Norm{ \underline{ \absDi{ a } } }_1 \cdot
+        \Norm{ \underline{ \absDi{ b } } }_1
+        =
+        \Norm{ \absDi{ a } }_{\infi,1,\tDe} \mult \Norm{ \absDi{ b } }_{\infi,1,\tDe}
+        =
+        \norm{ a }_{\infi,1,\tDe} \mult \norm{ b }_{\infi,1,\tDe}        
+    \end{align*}
+    which concludes the proof.
+    % \begin{align*}
+    %     \norm{ a \star b }_{\infi,1,\tDe}
+    %     &=
+    %     \Norm{ \absDi{ a \star b } }_{\infi,1,\tDe}
+    %     \\
+    %     &\leq
+    %     \Norm{ \absDi{ a } \star \absDi{ b } }_{\infi,1,\tDe}
+    %     \\
+    %     &=
+    %     \Norm{ \underline{ \absDi{ a } \conv \absDi{ b } } }_1
+    %     \\
+    %     &=
+    %     \Norm{ \underline{ \absDi{ a } } \conv
+    %     \underline{ \absDi{ b } } }_1
+    %     \\
+    %     &\leq
+    %     \Norm{ \underline{ \absDi{ a } } }_1 \cdot
+    %     \Norm{ \underline{ \absDi{ b } } }_1
+    %     \\
+    %     &=
+    %     \Norm{ \absDi{ a } }_{\infi,1,\tDe} \mult \Norm{ \absDi{ b } }_{\infi,1,\tDe}
+    %     =
+    %     \norm{ a }_{\infi,1,\tDe} \mult \norm{ b }_{\infi,1,\tDe}
+    % \end{align*}
+    % which concludes the proof.
+\end{proof}
