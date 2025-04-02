@@ -2,19 +2,19 @@
 \label{tri}
 
 
-\begin{definition}
-    Let $ T $ and $ S $ be distributions on $ \fsDis( \nrR^{2n} ) $ \cite{ryc025}.
-    The {\em star product} $ T \star S $ is defined by
+\begin{definition}[$\star$-product of distributions \cite{ryc025}]
+    Let $ T $ and $ S $ be distributions on $ \fsDis( \nrR^{2n} ) $.
+    The {\em $\star$-product} $ T \star S $ is defined by
     \begin{align}
-        \ska{ ( T \star S )( x, y ) }{ \ph( x, y ) }
-        :=
+        \ska{ T \star S }{ \ph }
+        &:=
         \int \Ska{ T( x, z ) }{ \ska{ S( z, y ) }{ \ph( x, y ) }_y }_x \intd{ z }
-        &&&\text{for all $ \ph \in \fsTest( \nrR^{2n} ) $.}
+        &&\text{for all $ \ph \in \fsTest( \nrR^{2n} ) $.}
     \end{align}
 \end{definition}
 
 \begin{conjecture}
-    The star product $ T \star S $
+    The $\star$-product $ T \star S $
     of distributions $ T, S \in \fsSmobnd(\nrR^n) \cteproDi \fsDis(\nrR^n) $
     is well defined if
     \begin{subequations}
@@ -22,8 +22,8 @@
             \left( \snfDiCo{ T }{ \Ph } \star \snfDiCo{ S }{ \Ph } \right)( x, y )
             <
             \infi
-            &&&\text{for all $ x, y \in \nrR^n $
-            and $ \Ph \in \ssBnd(\fsTest(\nrR^n)) $.}
+            &&&\text{for all $ x, y \in \nrR^n $,
+            $ \Ph \in \ssBnd(\fsTest(\nrR^n)) $.}
             \label{eq:star:exists}
         \end{align}
         For all $ \Ph \in \ssBnd(\fsTest(\nrR^n)) $
@@ -38,3 +38,53 @@
         \end{align}
     \end{subequations}
 \end{conjecture}
+
+\begin{lemma}
+    Let $ T, S \in \fsSmobnd(\nrR^n) \cteproDi \fsDis(\nrR^n) $
+    and $ \ps,\ph \in \fsTest(\nrR^n) $ then
+    \begin{align}
+        ( T \star S ) \conv ( \ph \tepro \ps )
+        =
+        ( T \conv ( \ph \tepro \sfdeo ) ) \star ( S \conv ( \sfdeo \tepro \ps ) )
+    \end{align}
+    if Equation \eqref{eq:star:exists} holds true.
+\end{lemma}
+
+Define the codiagonal embedding $ \fsDis( \nrR^n ) \to \fsDis( \nrR^{2n} ) $ by
+\begin{align}
+    \overline{T}
+    &:=
+    \sfInd{\nrR^n} \teproDi T
+    &&\text{for all $ T \in \fsDis( \nrR^n ) $.}
+    \label{eq:codiagemb}
+\end{align}
+
+\begin{lemma}
+    Let $ T, S \in \fsDis( \nrR^n ) $.
+    The convolution $ T \conv S $ exists if and only if
+    $ \overline{T} \star \overline{S} $ exists
+    in the sense of Equation \eqref{eq:star:exists}
+    and in this case
+    \begin{align}
+        \overline{ T } \star \overline{ S }
+        &=
+        \overline{ T \conv S }
+        .
+    \end{align}
+\end{lemma}
+
+
+Define the diagonal embedding
+\begin{align}
+    f \teproDi \sfdeo
+    &&\text{for all $ f \in \fsSmo( \nrR^n ) $.}
+    \label{eq:mult:emb}
+\end{align}
+The casual notation for this distribution
+is $ f( (x + y)/\sqrt{2} ) \mult \sfdeo( (x - y)/\sqrt{2} ) $.
+
+\begin{remark}
+    The multiplication algebra $ \fsSmobnd( \nrR^n ) $
+    is embedded in the $\star$-algebra $ \fsSmobnd(\nrR^n) \cteproDi \fsDis(\nrR^n) $
+    via the embedding in Equation~\eqref{eq:mult:emb}.
+\end{remark}
