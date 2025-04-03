@@ -173,29 +173,24 @@ Define the operators
         \norm{ a }_\star \mult \norm{ b }_\star        
     \end{align*}
     which concludes the proof.
-    % \begin{align*}
-    %     \norm{ a \star b }_\star
-    %     &=
-    %     \Norm{ \absDi{ a \star b } }_\star
-    %     \\
-    %     &\leq
-    %     \Norm{ \absDi{ a } \star \absDi{ b } }_\star
-    %     \\
-    %     &=
-    %     \Norm{ \underline{ \absDi{ a } \conv \absDi{ b } } }_1
-    %     \\
-    %     &=
-    %     \Norm{ \underline{ \absDi{ a } } \conv
-    %     \underline{ \absDi{ b } } }_1
-    %     \\
-    %     &\leq
-    %     \Norm{ \underline{ \absDi{ a } } }_1 \cdot
-    %     \Norm{ \underline{ \absDi{ b } } }_1
-    %     \\
-    %     &=
-    %     \Norm{ \absDi{ a } }_\star \mult \Norm{ \absDi{ b } }_\star
-    %     =
-    %     \norm{ a }_\star \mult \norm{ b }_\star
-    % \end{align*}
-    % which concludes the proof.
 \end{proof}
+
+Define the diagonal matrix $ c^\bullet $ by
+\begin{align}
+    c^\bullet( x, y )
+    &:=
+    \begin{cases}
+        c( x )&\text{if $ x = y $,}
+        \\
+        0&\text{if $ x \neq y $,}
+    \end{cases}
+    &&\text{for all $ c \in \fsSeq(\nrZ) $, $ x, y \in \nrZ $.}
+\end{align}
+Then multiplication on $ \fsSeq(\nrZ) $
+can be embedded into the $\star$-product via
+\begin{align}
+    a^\bullet \star b^\bullet
+    &=
+    ( a \mult b )^\bullet
+    &&\text{for all $ a, b \in \fsSeq(\nrZ) $.}
+\end{align}

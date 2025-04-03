@@ -5,6 +5,14 @@
 Let $ T $ be a distribution on $ \nrR^n $.
 The convolution seminorm function of $ T $
 with index $ \Ph $ is defined by \cite{KH022a,KH023,kle024}
+% \cite[Eq.\,(2.1)]{KH022a} %, \cite[p.\,1942]{KH023} and \cite{kle024}
+% \cite[Eq.\,(3.2)]{KH023} and Definition~ Eq.\,(II.1.8), p.\, \cite[p.\,]{kle024}
+% Equation~(2.1),       p.\,12      in \cite{KH022a}
+% Equation~(3.2),       p.\,1942    in \cite{KH023}
+% Equation~(I.3.8),     p.\,12,     in \cite{kle024}
+% Equation~(II.1.8),    p.\,25      in \cite{kle024}
+% in Section~V.2 on     p.\,131     in \cite{kle024}
+% Equation~(V.2.35),    p.\,139     in \cite{kle024}
 \begin{align}
     \snfConv{T}{\Ph}( x )
     &:=
@@ -24,7 +32,7 @@ Let $ \rmR_{\th} $ be the rotation
 \begin{align}
     \rmR_{\th}( x, y )
     &=
-    ( x\cos\th + y\sin\th, y\cos\th - x\sin\th )
+    ( x\cos\th - y\sin\th, y\cos\th + x\sin\th )
     &&\text{for all $ x,y \in \nrR^n $, $ \th \in \nrR $.}
 \end{align}
 Its action on distributions is explained by
@@ -39,8 +47,8 @@ of distributions is defined as
 \begin{align}
     T \teproDi S
     &:=
-    \rmR_{\pi/2}( T \tepro S )
-    &&\text{for $ T, S \in \fsDis( \nrR^n ) $,}
+    \rmR_{\pi/4}( T \tepro S )
+    &&\text{for all $ T, S \in \fsDis( \nrR^n ) $,}
 \end{align}
 with analogous notations for completed tensor products of function spaces.
 
@@ -58,7 +66,8 @@ with analogous notations for completed tensor products of function spaces.
 \end{definition}
 
 \begin{lemma}
-    Equation~\eqref{eq:snfDiCo}
+    Equation~\eqref{eq:snfDiCo} defines a Lipschitz continuous function
+    for any $ T \in \fsSmobnd(\nrR^n) \cteproDi \fsDis(\nrR^n) $.
 \end{lemma}
 
 \begin{lemma}
@@ -73,6 +82,6 @@ with analogous notations for completed tensor products of function spaces.
 \end{lemma}
 
 \begin{remark}
-    Note, that $ \rmR_{-\pi/4}( \sfdeo \teproDi \ph ) = \ph \tepro \sfdeo $
-    and $ \rmR_{\pi/4}( \sfdeo \teproDi \ph ) = \sfdeo \tepro \ph $.
+    Note, that $ \rmR_{-\pi/4}( \sfdeo \teproDi \ph ) = \sfdeo \tepro \ph $
+    and $ \rmR_{\pi/4}( \sfdeo \teproDi \ph ) = \ph \tepro \sfdeo $.
 \end{remark}
