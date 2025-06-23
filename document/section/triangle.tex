@@ -1,30 +1,45 @@
-\section{Qualitative Triangle Inequalities and Well Definedness}
+\section{Triangle Inequalities for the $\star$-Product}
 \label{tri}
 
+\begin{definition}[$\star$-product of distributions \cite{ryc025}]
+    Let $ T $ and $ S $ be distributions on $ \fsDis( \nrR^{2n} ) $.
+    The {\em $\star$-product} $ T \star S $ is defined by
+    \begin{align}
+        \ska{ T \star S }{ \ph }
+        :=
+        \int \Ska{ T( x, z ) }{ \ska{ S( z, y ) }{ \ph( x, y ) }_y }_x \intd{ z }
+        %&&&\text{for all $ \ph \in \fsTest( \nrR^{2n} ) $.}
+        \label{def:starprod:eq}
+    \end{align}
+    for all $ \ph \in \fsTest( \nrR^{2n} ) $ whenever the integral is well defined
+    as a Lebesgue integral.
+\end{definition}
+
 \begin{conjecture}
-    The $\star$-product $ T \star S $
-    of distributions $ T, S \in \fsSmobnd(\nrR^n) \cteproDi \fsDis(\nrR^n) $
-    is well defined if
-    \begin{subequations}
-        \begin{align}
-            \left( \snfDiCo{ T }{ \Ph } \star \snfDiCo{ S }{ \Ph } \right)( x, y )
-            <
-            \infi
-            &&&\text{for all $ x, y \in \nrR^n $,
-            $ \Ph \in \ssBnd(\fsTest(\nrR^n)) $.}
-            \label{eq:star:exists}
-        \end{align}
-        For all $ \Ph \in \ssBnd(\fsTest(\nrR^n)) $
-        there exists $ \Ps \in \ssBnd(\fsTest(\nrR^n)) $ such that
-        \begin{align}
-            \snfDiCo{ T \star S }{ \Ph }
-            &\leq
-            \snfDiCo{ T }{ \Ps } \star \snfDiCo{ S }{ \Ps }
-            &&\text{for all $ T, S \in \fsDis(\nrR^{2n}) $
-            that satisfy \eqref{eq:star:exists}.}
-            \label{eq:star:ineq}
-        \end{align}
-    \end{subequations}
+    Let $ T, S \in \fsSmobnd(\nrR^n) \cteproDi \fsDis(\nrR^n) $.
+    The $\star$-product $ T \star S $ of distributions
+    is well defined in the sense of Equation~\eqref{def:starprod:eq} if
+    \begin{align}
+        \left( \snfDiCo{ T }{ \Ph } \star \snfDiCo{ S }{ \Ph } \right)( x, y )
+        <
+        \infi
+        ~\text{for all $ \Ph \in \ssBnd(\fsTest(\nrR^n)) $
+        and $ x, y \in \nrR^n $.}
+        \label{eq:star:exists}
+    \end{align}
+\end{conjecture}
+
+\begin{conjecture}
+    For all $ \Ph \in \ssBnd(\fsTest(\nrR^n)) $
+    there exists $ \Ps \in \ssBnd(\fsTest(\nrR^n)) $ such that
+    \begin{align}
+        \snfDiCo{ T \star S }{ \Ph }
+        \leq
+        \snfDiCo{ T }{ \Ps } \star \snfDiCo{ S }{ \Ps }
+        \label{eq:star:ineq}
+    \end{align}
+    for all $ T, S \in \fsSmobnd(\nrR^n) \cteproDi \fsDis(\nrR^n) $
+    that satisfy \eqref{eq:star:exists}.
 \end{conjecture}
 
 \begin{lemma}

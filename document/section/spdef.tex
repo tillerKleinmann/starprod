@@ -1,0 +1,245 @@
+\section{On Definitions for the Star Product}
+
+
+The relation between a continuous linear operator
+$ L \colon \fsTest \to \fsDis $ and its kernel $ K_L \in \fsDis \ctepro \fsDis $
+is explained by
+\begin{align}
+    \ska{ L(\ph) }{ \ps }
+    =
+    \ska{ K_L }{ \ph \tepro \ps }
+    &&&\text{for all $ \ph,\ps \in \fsTest $.}
+\end{align}
+Or, in converse notation, the relation between a distribution
+$ K \in \fsDis \ctepro \fsDis $ and the associated
+continuous linear operator $ L_K \colon \fsTest \to \fsDis $
+is explained by
+\begin{align}
+    \ska{ L_K( \ph ) }{ \ps }
+    =
+    \ska{ K }{ \ph \tepro \ps }
+    &&&\text{for all $ \ph,\ps \in \fsTest $.}
+\end{align}
+This explains the star product $ K \star \ph $ via
+\begin{align}
+    \ska{ K \star \ph }{ \ps }
+    :=
+    \ska{ K }{ \ph \tepro \ps }
+    &&&\text{for all $ \ph,\ps \in \fsTest $.}
+\end{align}
+
+The star product satisfies
+\begin{align}
+    ( \ps * ( K \star \ph ) )( x )
+    =
+    \int ( ( \ps \tepro \sfdeo ) * ( K \star \ph ) )(x,y) \ph(y) \intd{y}
+    &&&\text{for all $ \ph,\ps \in \fsTest $, $ x \in \nrR $.}
+\end{align}
+
+In order to prove, that the star product of kernels
+equals the composition of operators,
+one has to prove that
+\begin{align}
+    \ska{ L_T( L_S( \ph ) ) }{ \ps }
+    =
+    \ska{ L_{T\star S} }{ \ph \tepro \ps }
+    &&&\text{for all $ \ph,\ps \in \fsTest $.}
+\end{align}
+
+
+Let $ T \in \fsSmo \ctepro \fsDis = \fsSmo_x(\fsDis) $,
+$ S \in \fsDis \ctepro \fsSmo = \fsSmo_y(\fsDis) $
+and $ f,g \in \fsSmo(\nrR^2) $ such that
+\begin{subequations}
+    \begin{align}
+        T(x,\cdot)g(\cdot,y) &\in \fsDisint
+        \\
+        f(x,\cdot)S(\cdot,y) &\in \fsDisint
+    \end{align}
+\end{subequations}
+for all $ x,y \in \nrR $.
+Then, one defines the star product $ f \star S$ and $ T \star g $
+via distributional integration as
+\begin{subequations}
+    \begin{align}
+        ( T \star g )( x,y )
+        &:=
+        \int T( x,\cdot ) g( \cdot, y )
+        \\
+        ( f \star S )( x,y )
+        &:=
+        \int f( x,\cdot ) S( \cdot, y )
+    \end{align}
+\end{subequations}
+for all $ x,y \in \nrR $.
+\begin{align}
+    ( f \star g )(x,y)
+    :=
+    \int f(x,z) g(z,y) \intd{z}
+\end{align}
+for all $ x,y \in \nrR $.
+
+
+Let $ T \in \fsDis \ctepro \fsSmo $ and $ S \in \fsSmo \ctepro \fsDis $.
+Then the {\em star product $ T \star S $ of $ T $ and $ S $}
+can be defined implicitly as
+\begin{align}
+    ( T \star S ) * ( \ph \tepro \ps )
+    :=
+    ( T * ( \ph \tepro \sfdeo ) ) \star ( S * ( \sfdeo \tepro \ps ) )
+\end{align}
+for all $ \ph,\ps \in \fsTest $,
+using the star product of smooth functions whenever it exists.
+
+Let $ T,S \in \fsDis \ctepro \fsSmo $.
+Then the star product can be defined as
+\begin{subequations}
+    \begin{align}
+        ( T \star S ) * ( \ph \tepro \sfdeo )
+        &:=
+        ( T * ( \ph \tepro \sfdeo ) ) \star S
+    \end{align}
+    whenever the distributional integral exists.
+Let $ T,S \in \fsSmo \ctepro \fsDis $.
+Then the star product can be defined as
+    \begin{align}
+        ( T \star S ) * ( \sfdeo \tepro \ps )
+        &:=
+        T \star ( S * ( \sfdeo \tepro \ps ) )
+    \end{align}
+\end{subequations}
+for all $ \ph, \ps \in \fsTest $.
+
+
+\begin{lemma}
+    \label{lem:unismo}
+    A subset $ B \subs \fsSmo $ is uniformly smooth
+    if and only if $ B \in \ssBnd(\fsSmo) $.
+\end{lemma}
+
+\begin{lemma}
+    Let $ T \in \fsDis \ctepro \fsDis $.
+    Then $ T \in \fsDis \ctepro \fsSmo $ holds if and only if
+    \begin{align}
+        \brmSet{ T * ( \ph \tepro \sfdeo ) }{ \ph \in \Ph }
+        \in
+        \ssBnd( \fsSmo \ctepro \fsSmo )
+        &&&\text{for all $ \Ph \in \ssBnd(\fsTest) $.}
+    \end{align}
+\end{lemma}
+
+\begin{proof}
+    With the notation
+    \begin{align}
+        F_\ph
+        :=
+        T * ( \ph \tepro \sfdeo )
+    \end{align}
+    it is clear, that
+    \begin{align}
+        \Abs{ \Ska{ ( \tDe^{0,n}_h T )( \cdot, y )  -
+        ( \partial^{0,n}T )( \cdot, y ) }{ \ph } }
+        =
+        \Abs{ ( \tDe^{0,n}_h F_{\refl{\ph}} )(0,y)  -
+        ( \partial^{0,n} F_{\refl{\ph}} )(0,y) }
+    \end{align}
+    for all $ n \in \nrN_0 $, $ h > 0 $, $ y \in \nrR $ and $ \ph \in \fsTest $.
+    This proves the equivalence stated in this Lemma
+    due to Lemma~\ref{lem:unismo}.
+\end{proof}
+
+\begin{theorem}
+    Let $ T,S \in \fsDis \ctepro \fsSmo $.
+    Then the star product can be defined as
+    \begin{align}
+        ( T \star S ) * ( \ph \tepro \sfdeo )
+        :=
+        ( T * ( \ph \tepro \sfdeo ) ) \star S
+        &&&\text{for all $ \ph \in \fsTest $,}
+    \end{align}
+    whenever the distributional integral exists.
+\end{theorem}
+\begin{proof}
+    Let $ \Ph \in \ssBnd(\fsTest) $.
+    It has to be proved, that
+    \begin{align}
+        \BrmSet{ ( T * ( \ph \tepro \sfdeo ) ) \star S }{ \ph \in \Ph }
+        \in
+        \ssBnd\left( \fsSmo \ctepro \fsSmo \right)
+        .
+    \end{align}
+    First, note that it is true in general, that
+    \begin{align}
+        \BrmSet{ (x,y) \mto ( T * ( \ph \tepro \sfdeo ) )(x,\cdot) \mult S(\cdot,y) }
+        { \ph \in \Ph }
+        \in
+        \ssBnd\left( ( \fsSmo \ctepro \fsSmo )( \fsDis ) \right)
+        ,
+    \end{align}
+    because the set $ \BrmSet{ x \mto ( T * ( \ph \tepro \sfdeo ) )(x,\cdot) }{ \ph \in \Ph } $
+    belongs to $ \ssBnd( \fsSmo( \fsSmo ) ) $,
+    the mapping $ y \mto S(\cdot,y) $ belongs to $ \fsSmo( \fsDis ) $ and
+    multiplication is hypocontinuous as a mapping $ \fsSmo \times \fsDis \to \fsDis $.
+    It would be sufficient to prove, that
+    \begin{align}
+        \BrmSet{ (x,y) \mto ( T * ( \ph \tepro \sfdeo ) )(x,\cdot) \mult S(\cdot,y) }
+        { \ph \in \Ph }
+        \in
+        \ssBnd\left( ( \fsSmo \ctepro \fsSmo )( \fsDisint ) \right)
+        .
+    \end{align}
+\end{proof}
+
+
+\begin{theorem}
+    \label{thm:spcau}
+    Let $ T,S \in \fsDisaca \ctepro \fsSmocau $.
+    Then the {\em star product $ T \star S $ of $ T $ and $ S $}
+    belongs to $ \fsDisaca \ctepro \fsSmocau $
+    and is well-defined by the formula
+    \begin{align}
+        ( T \star S ) * ( \ph \tepro \sfdeo )
+        :=
+        ( T * ( \ph \tepro \sfdeo ) ) \star S
+        &&&\text{for all $ \ph \in \fsTest $.}
+        \label{thm:spcau:eq}
+    \end{align}
+\end{theorem}
+\begin{proof}
+    Let $ \Ph \in \ssBnd(\fsTest) $.
+    It has to be proved, that
+    \begin{align}
+        \BrmSet{ ( T * ( \ph \tepro \sfdeo ) ) \star S }{ \ph \in \Ph }
+        \in
+        \ssBnd\left( \fsSmo \ctepro \fsSmo \right)
+        .
+        \label{prf:thm:spcau:eq:1}
+    \end{align}
+    First, note that it is true, that
+    \begin{align}
+        \BrmSet{ (x,y) \mto ( T * ( \ph \tepro \sfdeo ) )(x,\cdot) \mult S(\cdot,y) }
+        { \ph \in \Ph }
+        \in
+        \ssBnd\left( ( \fsSmo \ctepro \fsSmo )( \fsDis ) \right)
+        ,
+        \label{prf:thm:spcau:eq:2}
+    \end{align}
+    because
+    $ \BrmSet{ x \mto ( T * ( \ph \tepro \sfdeo ) )(x,\cdot) }{ \ph \in \Ph } $
+    belongs to $ \ssBnd( \fsSmo( \fsSmo ) ) $,
+    the mapping $ y \mto S(\cdot,y) $ belongs to $ \fsSmo( \fsDis ) $ and
+    multiplication is hypocontinuous
+    as a mapping $ \fsSmo \times \fsDis \to \fsDis $.
+
+    The supports of the functions in Equation \eqref{prf:thm:spcau:eq:2}
+    are contained in a fixed bounded set
+    if $ x,y $ are from a bounded set.
+    Thus, the set on the left hand side
+    in Equation \eqref{prf:thm:spcau:eq:2} is contained
+    in $ \ssBnd\left( ( \fsSmo \ctepro \fsSmo )( \fsDiscpt ) \right) $,
+    and thus, in $ \ssBnd\left( ( \fsSmo \ctepro \fsSmo )( \fsDisint ) \right) $.
+    This inclusion implies Equation \eqref{prf:thm:spcau:eq:1},
+    and thus, that $ T \star S \in \fsDis \ctepro \fsSmo $.
+    Considering the supports, it is also clear,
+    that $ T \star S \in \fsDisaca \ctepro \fsSmocau $.
+\end{proof}
