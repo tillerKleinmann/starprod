@@ -8,8 +8,9 @@ is explained by
     \ska{ L(\ph) }{ \ps }
     =
     \ska{ K_L }{ \ph \tepro \ps }
-    &&&\text{for all $ \ph,\ps \in \fsTest $.}
+    %&&&\text{for all $ \ph,\ps \in \fsTest $.}
 \end{align}
+for all $ \ph,\ps \in \fsTest $.
 Or, in converse notation, the relation between a distribution
 $ K \in \fsDis \ctepro \fsDis $ and the associated
 continuous linear operator $ L_K \colon \fsTest \to \fsDis $
@@ -18,23 +19,26 @@ is explained by
     \ska{ L_K( \ph ) }{ \ps }
     =
     \ska{ K }{ \ph \tepro \ps }
-    &&&\text{for all $ \ph,\ps \in \fsTest $.}
+    %&&&\text{for all $ \ph,\ps \in \fsTest $.}
 \end{align}
+for all $ \ph,\ps \in \fsTest $.
 This explains the star product $ K \star \ph $ via
 \begin{align}
     \ska{ K \star \ph }{ \ps }
     :=
     \ska{ K }{ \ph \tepro \ps }
-    &&&\text{for all $ \ph,\ps \in \fsTest $.}
+    %&&&\text{for all $ \ph,\ps \in \fsTest $.}
 \end{align}
+for all $ \ph,\ps \in \fsTest $.
 
 The star product satisfies
 \begin{align}
     ( \ps * ( K \star \ph ) )( x )
     =
     \int ( ( \ps \tepro \sfdeo ) * ( K \star \ph ) )(x,y) \ph(y) \intd{y}
-    &&&\text{for all $ \ph,\ps \in \fsTest $, $ x \in \nrR $.}
+    %&&&\text{for all $ \ph,\ps \in \fsTest $, $ x \in \nrR $.}
 \end{align}
+for all $ \ph,\ps \in \fsTest $, $ x \in \nrR $.
 
 In order to prove, that the star product of kernels
 equals the composition of operators,
@@ -43,12 +47,19 @@ one has to prove that
     \ska{ L_T( L_S( \ph ) ) }{ \ps }
     =
     \ska{ L_{T\star S} }{ \ph \tepro \ps }
-    &&&\text{for all $ \ph,\ps \in \fsTest $.}
+    %&&&\text{for all $ \ph,\ps \in \fsTest $.}
+\end{align}
+for all $ \ph,\ps \in \fsTest $.
+
+It holds
+\begin{align}
+    L_T \circ L_S
+    =
+    L_{T \star S}
 \end{align}
 
 
-Let $ T \in \fsSmo \ctepro \fsDis = \fsSmo_x(\fsDis) $,
-$ S \in \fsDis \ctepro \fsSmo = \fsSmo_y(\fsDis) $
+Let $ T \in \fsSmo \ctepro \fsDis $, $ S \in \fsDis \ctepro \fsSmo $
 and $ f,g \in \fsSmo(\nrR^2) $ such that
 \begin{subequations}
     \begin{align}
@@ -77,8 +88,11 @@ for all $ x,y \in \nrR $.
     :=
     \int f(x,z) g(z,y) \intd{z}
 \end{align}
+for all $ x,y \in \nrR $, whenever
+\begin{align}
+    ( z \mto f(x,z)g(z,y) ) \in \fsLeb{1}
+\end{align}
 for all $ x,y \in \nrR $.
-
 
 Let $ T \in \fsDis \ctepro \fsSmo $ and $ S \in \fsSmo \ctepro \fsDis $.
 Then the {\em star product $ T \star S $ of $ T $ and $ S $}
@@ -89,8 +103,8 @@ can be defined implicitly as
     ( T * ( \ph \tepro \sfdeo ) ) \star ( S * ( \sfdeo \tepro \ps ) )
 \end{align}
 for all $ \ph,\ps \in \fsTest $,
-using the star product of smooth functions whenever it exists.
-
+using the star product of smooth functions whenever it exists
+as a Lebesgue integral.
 Let $ T,S \in \fsDis \ctepro \fsSmo $.
 Then the star product can be defined as
 \begin{subequations}
@@ -99,16 +113,17 @@ Then the star product can be defined as
         &:=
         ( T * ( \ph \tepro \sfdeo ) ) \star S
     \end{align}
+    for all $ \ph \in \fsTest $,
     whenever the distributional integral exists.
-Let $ T,S \in \fsSmo \ctepro \fsDis $.
-Then the star product can be defined as
+    Let $ T,S \in \fsSmo \ctepro \fsDis $.
+    Then the star product can be defined as
     \begin{align}
         ( T \star S ) * ( \sfdeo \tepro \ps )
         &:=
         T \star ( S * ( \sfdeo \tepro \ps ) )
     \end{align}
 \end{subequations}
-for all $ \ph, \ps \in \fsTest $.
+for all $ \ps \in \fsTest $.
 
 
 \begin{lemma}
@@ -118,23 +133,21 @@ for all $ \ph, \ps \in \fsTest $.
 \end{lemma}
 
 \begin{lemma}
+    \label{lem:partsmo}
     Let $ T \in \fsDis \ctepro \fsDis $.
-    Then $ T \in \fsDis \ctepro \fsSmo $ holds if and only if
+    Then $ T $ belongs to $ \fsDis \ctepro \fsSmo $ if and only if
     \begin{align}
         \brmSet{ T * ( \ph \tepro \sfdeo ) }{ \ph \in \Ph }
         \in
         \ssBnd( \fsSmo \ctepro \fsSmo )
-        &&&\text{for all $ \Ph \in \ssBnd(\fsTest) $.}
+        %&&&\text{for all $ \Ph \in \ssBnd(\fsTest) $.}
+        \label{lem:partsmo:eq}
     \end{align}
+    for all $ \Ph \in \ssBnd(\fsTest) $.
 \end{lemma}
 
 \begin{proof}
-    With the notation
-    \begin{align}
-        F_\ph
-        :=
-        T * ( \ph \tepro \sfdeo )
-    \end{align}
+    With the notation $ F_\ph := T * ( \ph \tepro \sfdeo ) $
     it is clear, that
     \begin{align}
         \Abs{ \Ska{ ( \tDe^{0,n}_h T )( \cdot, y )  -
@@ -142,10 +155,23 @@ for all $ \ph, \ps \in \fsTest $.
         =
         \Abs{ ( \tDe^{0,n}_h F_{\refl{\ph}} )(0,y)  -
         ( \partial^{0,n} F_{\refl{\ph}} )(0,y) }
+        \label{lem:partsmo:prf:eq}
     \end{align}
     for all $ n \in \nrN_0 $, $ h > 0 $, $ y \in \nrR $ and $ \ph \in \fsTest $.
-    This proves the equivalence stated in this Lemma
-    due to Lemma~\ref{lem:unismo}.
+    Also, it holds that
+    \begin{align}
+        F_\ph(x,y) = F_{\ta_{-x}\ph}(0,y)
+    \end{align}
+    for all $ x,y \in \nrR $ and $ \ph \in \fsTest $.
+    The left hand side of Equation \eqref{lem:partsmo:prf:eq}
+    converges to zero uniformly in $ \ph \in \Ph $ for all $ \Ph \in \ssBnd(\fsTest) $
+    if and only if $ T \in \fsDis \ctepro \fsSmo $.
+    The right hand side of Equation \eqref{lem:partsmo:prf:eq}
+    converges to zero uniformly in $ \ph \in \Ph $ for all $ \Ph \in \ssBnd(\fsTest) $
+    if and only if $ \brmSet{ F_\ph }{ \ph \in \Ph } $
+    is uniformly smooth at $ (0,y) $ for every $ y \in Y $
+    and all $ \ph \in \ssBnd(\fsTest) $.
+    Therefore, using Lemma~\ref{lem:unismo}, the stated equivalence follows.
 \end{proof}
 
 \begin{theorem}
@@ -155,8 +181,9 @@ for all $ \ph, \ps \in \fsTest $.
         ( T \star S ) * ( \ph \tepro \sfdeo )
         :=
         ( T * ( \ph \tepro \sfdeo ) ) \star S
-        &&&\text{for all $ \ph \in \fsTest $,}
+        %&&&\text{for all $ \ph \in \fsTest $,}
     \end{align}
+    for all $ \ph \in \fsTest $,
     whenever the distributional integral exists.
 \end{theorem}
 \begin{proof}
@@ -193,17 +220,18 @@ for all $ \ph, \ps \in \fsTest $.
 
 \begin{theorem}
     \label{thm:spcau}
-    Let $ T,S \in \fsDisaca \ctepro \fsSmocau $.
+    Let $ T,S \in \fsDiscau \ctepro \fsSmoaca $.
     Then the {\em star product $ T \star S $ of $ T $ and $ S $}
-    belongs to $ \fsDisaca \ctepro \fsSmocau $
+    belongs to $ \fsDiscau \ctepro \fsSmoaca $
     and is well-defined by the formula
     \begin{align}
         ( T \star S ) * ( \ph \tepro \sfdeo )
         :=
         ( T * ( \ph \tepro \sfdeo ) ) \star S
-        &&&\text{for all $ \ph \in \fsTest $.}
+        %&&&\text{for all $ \ph \in \fsTest $.}
         \label{thm:spcau:eq}
     \end{align}
+    for all $ \ph \in \fsTest $.
 \end{theorem}
 \begin{proof}
     Let $ \Ph \in \ssBnd(\fsTest) $.
@@ -241,5 +269,74 @@ for all $ \ph, \ps \in \fsTest $.
     This inclusion implies Equation \eqref{prf:thm:spcau:eq:1},
     and thus, that $ T \star S \in \fsDis \ctepro \fsSmo $.
     Considering the supports, it is also clear,
-    that $ T \star S \in \fsDisaca \ctepro \fsSmocau $.
+    that $ T \star S \in \fsDiscau \ctepro \fsSmoaca $.
 \end{proof}
+
+
+\newpage
+
+\begin{figure}
+    \centering
+    \begin{tabular}{cc}
+        $ L_K \colon $
+        &
+        $ \in K_L $
+        \\[3ex]
+        $ \fsSmocau \to \fsDiscau $
+        &
+        $ \fsDiscau \ctepro \fsDisaca $
+        \\[3ex]
+        $ \fsDiscau \to \fsSmocau $
+        &
+        $ \fsSmocau \ctepro \fsSmoaca $
+        \\[3ex]
+        $ \fsDiscau \to \fsDiscau $
+        &
+        $ \fsDiscau \ctepro \fsSmoaca $
+        \\[3ex]
+        $ \fsSmocau \to \fsSmocau $
+        &
+        $ \fsSmocau \ctepro \fsDisaca $
+    \end{tabular}
+    \caption{Jo.}
+\end{figure}
+
+\begin{align}
+    ( \fsDiscau \ctepro \fsDisaca ) \star ( \fsSmocau \ctepro \fsDisaca )
+    &\subs
+    \fsDiscau \ctepro \fsDisaca
+    \\
+    ( \fsDiscau \ctepro \fsSmoaca ) \star ( \fsDiscau \ctepro \fsDisaca )
+    &\subs
+    \fsDiscau \ctepro \fsDisaca
+\end{align}
+
+\begin{align}
+    ( \fsSmocau \ctepro \fsDisaca ) \star ( \fsSmocau \ctepro \fsSmoaca )
+    &\subs
+    \fsSmocau \ctepro \fsSmoaca
+    \\
+    ( \fsSmocau \ctepro \fsSmoaca ) \star ( \fsDiscau \ctepro \fsSmoaca )
+    &\subs
+    \fsSmocau \ctepro \fsSmoaca
+\end{align}
+
+\begin{align}
+    ( \fsSmocau \ctepro \fsDisaca ) \star ( \fsSmocau \ctepro \fsDisaca )
+    &\subs
+    \fsSmocau \ctepro \fsDisaca
+    \\
+    ( \fsDiscau \ctepro \fsSmoaca ) \star ( \fsDiscau \ctepro \fsSmoaca )
+    &\subs
+    \fsDiscau \ctepro \fsSmoaca
+\end{align}
+
+\begin{align}
+    ( \fsSmocau \ctepro \fsSmoaca ) \star ( \fsDiscau \ctepro \fsDisaca )
+    &\subs
+    \fsSmocau \ctepro \fsDisaca
+    \\
+    ( \fsDiscau \ctepro \fsDisaca ) \star ( \fsSmocau \ctepro \fsSmoaca )
+    &\subs
+    \fsDiscau \ctepro \fsSmoaca
+\end{align}

@@ -1,0 +1,75 @@
+\section{Tensor Product Spaces}
+
+\begin{lemma}
+    \label{lem:distepro}
+    Let $ E \subs \fsDis $ be a complete locally convex space
+    and $ T \in \fsDis \ctepro \fsDis $.
+    Then the following are equivalent:
+    \begin{subequations}
+        \begin{align}
+            T &\in \fsDis \ctepro E
+            \\
+            \forall \ph \in \fsTest
+            ~:~
+            T * ( \ph \tepro \sfdeo ) &\in \fsSmo \ctepro E
+            \\
+            \forall \Ph \in \ssBnd(\fsTest)
+            ~:~
+            T * ( \Ph \tepro \sfdeo ) &\in \ssBnd( \fsSmo \ctepro E )
+        \end{align}
+    \end{subequations}
+\end{lemma}
+\begin{proof}
+    The space $ \fsDis $ is characterized
+    as the inverse image space of $ \fsSmo $
+    under the mappings $ T \mto T * \ph $
+    with $ \ph \in \fsTest $.
+    This yields the equivalence of the first two statements.
+    % Because the weak and strong topology
+    % induced by the mappings $ T \mto T * \ph $
+    % Furthermore, the weak topology equals the strong topology
+    % with respect to these mappings.
+\end{proof}
+
+\begin{lemma}
+    \label{lem:jo}
+    Let $ E \subs \fsDis $ be a complete locally convex space
+    such that $ E' \subs \fsDis $,
+    $ T \in \fsDis \ctepro E $ and $ S \in E' \ctepro \fsDis $.
+    Then
+    \begin{align}
+        \BrmSet{
+        (x,y)
+        \Mto
+        {}_E\Ska{ ( T * ( \ph \tepro \sfdeo ) )(x,\cdot) }
+            { ( S * ( \sfdeo \tepro \ps ) )(\cdot,y) }_{E'}
+        }
+        { \ph \in \Ph, \ps \in \Ps }
+        \label{eq:lem:jo}
+    \end{align}
+    belongs to $ \ssBnd( \fsSmo \ctepro \fsSmo ) $
+    for all $ \Ph,\Ps \in \ssBnd(\fsTest) $.
+\end{lemma}
+\begin{proof}
+    The bilinear form $ {}_E\skav_{E'} $ is hypocontinuous.
+\end{proof}
+
+
+
+
+\begin{corollary}
+    Let $ E $ be a normal amalgam space of distributions.
+    Then the $\fsDisint$-star product $ T \star S $
+    of $ T \in \fsDis \ctepro E $ and $ S \in E' \ctepro \fsDis $,
+    implicitly defined by
+    \begin{align}
+        ( T \star S ) * ( \ph \tepro \ps )
+        :=
+        ( T * ( \ph \tepro \sfdeo ) ) \star ( S * ( \sfdeo \tepro \ps ) )
+    \end{align}
+    for all $ \ph,\ps \in \fsTest $,
+    belongs to $ \fsDis \ctepro \fsDis $.
+\end{corollary}
+\begin{proof}
+    
+\end{proof}
