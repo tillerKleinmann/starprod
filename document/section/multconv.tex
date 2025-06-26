@@ -1,0 +1,53 @@
+\section{Embedding Multiplication and Convolution Operators}
+
+
+Let $ \rmR_{\th} $ be the rotation
+\begin{align}
+    \rmR_{\th}( x, y )
+    &=
+    ( x\cos\th - y\sin\th, y\cos\th + x\sin\th )
+    &&\text{for all $ x,y \in \nrR^n $, $ \th \in \nrR $.}
+\end{align}
+Its action on distributions is explained by
+\begin{align}
+    \ska{ \rmR_\th( T ) }{ \ph }
+    &=
+    \ska{ T }{ \ph \circ \rmR_\th }
+    &&\text{for all $ \ph \in \fsTest( \nrR^{2n} ) $, $ \th \in \nrR $.}
+\end{align}
+The diagonal-codiagonal tensor product $ T \teproDi S $
+of distributions is defined as
+\begin{align}
+    T \teproDi S
+    &:=
+    \rmR_{\pi/4}( T \tepro S )
+    &&\text{for all $ T, S \in \fsDis( \nrR^n ) $,}
+\end{align}
+with analogous notations for completed tensor products of function spaces.
+In the tensor product $ T \teproDi S $,
+the first component goes along the diagonal
+and the second one along the codiagonal.
+
+
+Multiplication and convolution operators are embedded via
+\begin{align}
+    T^*
+    &:=
+    1 \teproDi T
+    &&\text{and}&
+    f^*
+    &:=
+    f \teproDi \sfdeo
+    ,
+\end{align}
+for $ T \in \fsDis $ and $ f \in \fsSmo $.
+
+\begin{align}
+    \left( \fsDis \right)^*
+    &\subs
+    ( \fsDis \ctepro \fsSmo ) \cap ( \fsSmo \ctepro \fsDis )
+    \\
+    \left( \fsSmo \right)^\bullet
+    &\subs
+    ( \fsDis \ctepro \fsSmo ) \cap ( \fsSmo \ctepro \fsDis )
+\end{align}
