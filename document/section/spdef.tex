@@ -1,6 +1,5 @@
 \section{On Definitions for the Star Product}
 
-
 The relation between a continuous linear operator
 $ L \colon \fsTest \to \fsDis $ and its kernel $ K_L \in \fsDis \ctepro \fsDis $
 is explained by
@@ -104,7 +103,7 @@ can be defined implicitly as
 \end{align}
 for all $ \ph,\ps \in \fsTest $,
 using the star product of smooth functions whenever it exists
-as a Lebesgue integral.
+as a Lebesgue-integral.
 Let $ T,S \in \fsDis \ctepro \fsSmo $.
 Then the star product can be defined as
 \begin{subequations}
@@ -127,10 +126,72 @@ for all $ \ps \in \fsTest $.
 
 
 \begin{lemma}
+    \label{lem:peval}
+    Let $ T \in \fsDis \ctepro \fsDis $ and $ x \in \nrR $.
+    If the right hand side of
+    \begin{align}
+        \ska{T(x,\cdot)}{\ps}
+        :=
+        \lim_{\text{$ \fsTest \ni \ph \underset{\fsDiscpt}{\to} \sfde{x} $}}
+        \ska{T}{\ph\tepro\ps}
+        \label{eq:lem:peval}
+    \end{align}
+    is well-defined for all $ \ps \in \fsTest $,
+    then $ T(x,\cdot) \in \fsDis $.
+\end{lemma}
+
+\begin{proof}
+    The space $\fsDis$ is weakly sequentially complete
+    and there exist sequences $ (\ph_n) \subs \fsTest $
+    such that $ \ph_n \to \sfde{x} $ is $\fsDiscpt$.
+\end{proof}
+
+\begin{lemma}
+    \label{lem:preg}
+    Let $ T \in \fsDis \ctepro \fsDis $, $ \ph \in \fsTest $ and $ x \in \nrR $.
+    Then $ ( T * ( \ph \tepro \sfdeo ) )(x,\cdot) $ is well-defined
+    and satisfies
+    \begin{align}
+        \ska{ ( T * ( \ph \tepro \sfdeo ) )( x, \cdot ) }{ \ps }
+        =
+        \ska{ T }{ \ta_x\refl{\ph} \tepro \ps }
+        &&&\text{for all $ \ps \in \fsTest $.}
+        \label{eq:lem:preg}
+    \end{align}
+\end{lemma}
+
+\begin{proof}
+    Using transposition of convolution operators one obtains
+    \begin{align}
+        \ska{ T * ( \ph \tepro \sfdeo ) }{ \th \tepro \ps }
+        =
+        \ska{ T }{ ( \ta_x\refl{\ph} * \th ) \tepro \ps }
+        &&&\text{for all $ \th,\ps \in \fsTest $.}
+        \label{eq:prf:lem:preg}
+    \end{align}
+    With $ \th \to \sfde{x} $ in $\fsDiscpt$ one also obtains
+    $ \ta_x\refl{\ph} * \th \to \ta_x\refl{\ph}$ in $\fsTest$
+    and therefore, the limit on the right hand side of \eqref{eq:prf:lem:preg}
+    exists and Equation~\eqref{eq:lem:preg} follows from Lemma~\ref{lem:peval}.
+\end{proof}
+
+\begin{lemma}
+    Let $ T \in \fsDis \tepro \fsDis $,
+    $ \ph \in \fsTest $ and $ y \in \nrR $.
+    Then $ ( T * ( \ph \tepro \sfdeo ) )(x,y) $ exists for all $ x \in \nrR $
+    if and only if $ T(\cdot,y) $ exists.
+\end{lemma}
+
+
+\begin{lemma}
     \label{lem:unismo}
     A subset $ B \subs \fsSmo $ is uniformly smooth
     if and only if $ B \in \ssBnd(\fsSmo) $.
 \end{lemma}
+
+\begin{proof}
+    This is immediate from Lemma~\ref{lem:peval}.
+\end{proof}
 
 \begin{lemma}
     \label{lem:partsmo}
@@ -147,8 +208,17 @@ for all $ \ps \in \fsTest $.
 \end{lemma}
 
 \begin{proof}
-    With the notation $ F_\ph := T * ( \ph \tepro \sfdeo ) $
-    it is clear, that
+    If $ T $ belongs to $ \fsDis \ctepro \fsSmo $,
+    then $ T(\cdot,y) \in \fsDis $ is well-defined
+    and equal to $ \ska{ T }{ \ph \tepro \sfdeo } $.
+
+    With the notation $ F_\ph := T * ( \ph \tepro \sfdeo ) $ one has
+    \begin{align}
+        \ska{ T( \cdot, y ) }{ \ph }
+        =
+        F_{\refl{\ph}}( 0, y )
+    \end{align}
+    and thus
     \begin{align}
         \Abs{ \Ska{ ( \tDe^{0,n}_h T )( \cdot, y )  -
         ( \partial^{0,n}T )( \cdot, y ) }{ \ph } }

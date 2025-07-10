@@ -1,0 +1,93 @@
+\section{List of Definitions for the Star Product}
+
+
+\begin{definition}
+    \begin{enumerate}
+        \item 
+        Let $ T \in \fsDis \ctepro \fsDis $ and $ S \in \fsSmo \ctepro \fsDis $.
+        Then the {\em star product $ T \star S $ of $ T $ and $ S $}
+        can be defined as
+        \begin{align}
+            ( T \star S )( \ph )
+            :=
+            \int T(x,z) \mult \ska{ S(z,y) }{ \ph(x,y) }_y \intd(x,z)
+        \end{align}
+        for all $ \ph \in \fsTest \ctepro \fsTest $,
+        whenever the integral over $ x $ and $ z $
+        exists in the $\fsDisint\ctepro\fsDisint$-sense.
+        \item
+        Let $ T \in \fsDis \ctepro \fsSmo $ and $ S \in \fsDis \ctepro \fsDis $.
+        Then the {\em star product $ T \star S $ of $ T $ and $ S $}
+        can be defined as
+        \begin{align}
+            ( T \star S )( \ph )
+            :=
+            \int \ska{ T(x,z) }{ \ph(x,y) }_x \mult S(z,y) \intd(y,z)
+        \end{align}
+        for all $ \ph \in \fsTest \ctepro \fsTest $,
+        whenever the integral over $ y $ and $ z $
+        exists in the $\fsDisint\ctepro\fsDisint$-sense.
+        \item
+        Let $ T \in \fsDis \ctepro \fsSmo $ and $ g \in \fsSmo \ctepro \fsSmo $.
+        Then the {\em star product $ T \star S $ of $ T $ and $ S $}
+        can be defined as
+        \begin{align}
+            ( T \star g )( x, y )
+            :=
+            \int T( x, z ) \mult g( z, y ) \intd{z}
+            ,
+            \label{def:sp:Tg}
+        \end{align}
+        for all $ x,y \in \nrR $,
+        whenever the integral exists in the $\fsDisint$-sense.
+        \item
+        Let $ f \in \fsSmo \ctepro \fsSmo $ and $ S \in \fsSmo \ctepro \fsDis $.
+        Then the {\em star product $ T \star S $ of $ T $ and $ S $}
+        can be defined as
+        \begin{align}
+            ( f \star S )( x, y )
+            :=
+            \int f( x, z ) \mult S( z, y ) \intd{z}
+            \label{def:sp:fS}
+        \end{align}
+        for all $ x,y \in \nrR $,
+        whenever the integral exists in the $\fsDisint$-sense.
+        \item
+        Let $ (T,S) \in (\fsDis \ctepro \fsSmo) \times (\fsDis \ctepro \fsDis) $
+        resp.
+        $ (T,S) \in (\fsDis \ctepro \fsDis) \times (\fsSmo \ctepro \fsDis) $.
+        Then
+        \begin{align}
+            ( T \star S ) * ( \ph \tepro \ps )
+            :=
+            ( T * ( \ph \tepro \sfdeo ) ) \star ( S * ( \sfdeo \tepro \ps ) )
+        \end{align}
+        for all $ \ph,\ps \in \fsTest $,
+        whenever the star product on the right hand side
+        exists in the sense of \eqref{def:sp:Tg} resp. \eqref{def:sp:fS}.
+        \item
+        Let $ (T,S) \in (\fsDis \ctepro \fsSmo) \times (\fsDis \ctepro \fsSmo) $.
+        Then the {\em star product $ T \star S $ of $ T $ and $ S $}
+        can be defined as
+        \begin{align}
+            ( T \star S ) * ( \ph \tepro \sfdeo )
+            &:=
+            ( T * ( \ph \tepro \sfdeo ) ) \star S
+            &&\text{for all $ \ph \in \fsTest $,}
+        \end{align}
+        whenever the star product on the right hand side
+        exists in the sense of \eqref{def:sp:Tg}.
+        \item
+        Let $ (T,S) \in (\fsSmo \ctepro \fsDis) \times (\fsSmo \ctepro \fsDis) $.
+        Then the {\em star product $ T \star S $ of $ T $ and $ S $}
+        can be defined as
+        \begin{align}
+            ( T \star S ) * ( \sfdeo \tepro \ps )
+            &:=
+            T \star ( S * ( \sfdeo \tepro \ps ) )
+            &&\text{for all $ \ps \in \fsTest $,}
+        \end{align}
+        whenever the star product on the right hand side
+        exists in the sense of \eqref{def:sp:fS}.
+    \end{enumerate}
+\end{definition}

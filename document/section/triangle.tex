@@ -2,17 +2,16 @@
 \label{tri}
 
 \begin{definition}[$\star$-product of distributions \cite{ryc025}]
-    Let $ T $ and $ S $ be distributions on $ \fsDis( \nrR^{2n} ) $.
+    Let $ T $ and $ S $ be distributions on $ \fsDis \ctepro \fsDis $.
     The {\em $\star$-product} $ T \star S $ is defined by
     \begin{align}
         \ska{ T \star S }{ \ph }
         :=
         \int \Ska{ T( x, z ) }{ \ska{ S( z, y ) }{ \ph( x, y ) }_y }_x \intd{ z }
-        %&&&\text{for all $ \ph \in \fsTest( \nrR^{2n} ) $.}
         \label{def:starprod:eq}
     \end{align}
-    for all $ \ph \in \fsTest( \nrR^{2n} ) $ whenever the integral is well defined
-    as a Lebesgue integral.
+    for all $ \ph \in \fsTest \ctepro \fsTest $
+    whenever the integral is well defined as a Lebesgue integral.
 \end{definition}
 
 \begin{conjecture}
